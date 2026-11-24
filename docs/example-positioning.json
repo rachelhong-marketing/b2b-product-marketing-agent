@@ -2,6 +2,7 @@
   "brand": "Fernhill Software",
   "product": "Fernhill Data Quality Platform",
   "category": "customer data quality software that finds and merges duplicate customer records across systems",
+  "as_of": "2026-11-24",
   "statement_parts": [
     {
       "label": "For",
@@ -28,41 +29,108 @@
       "text": "[MISSING: write it. Claim nobody tracked makes: Keep them out: monitoring so duplicate records don't come back]"
     }
   ],
-  "icp": [
+  "icp_status": "CONFIRMED",
+  "icp_confirmed": [
     {
-      "industry": "Financial services",
-      "company_size": "1000-10000",
+      "segment": "Retail, 1000-10000",
+      "decided_by": "Sample Product Marketer",
+      "date": "2026-11-10",
+      "note": "core target for the second half"
+    },
+    {
+      "segment": "Financial services, 1000-10000",
+      "decided_by": "Sample Product Marketer",
+      "date": "2026-11-10",
+      "note": "core target for the second half"
+    }
+  ],
+  "icp_hypotheses": [
+    {
+      "segment": "Financial services, 1000-10000",
       "deals": 12,
-      "score": 59.7
+      "score": 59.7,
+      "decision": "confirmed"
     },
     {
-      "industry": "Retail",
-      "company_size": "1000-10000",
+      "segment": "Retail, 1000-10000",
       "deals": 14,
-      "score": 58.6
+      "score": 58.6,
+      "decision": "confirmed"
     },
     {
-      "industry": "Healthcare",
-      "company_size": "1000-10000",
+      "segment": "Healthcare, 1000-10000",
       "deals": 8,
-      "score": 40.0
+      "score": 40.0,
+      "decision": "needs decision"
     }
   ],
   "personas": [
     {
-      "role": "Director of Analytics",
-      "won_deals": 10,
-      "main_pain": "reports do not match"
+      "name": "Analytics leader",
+      "titles": [
+        "Director of Analytics",
+        "BI Director"
+      ],
+      "won_deals": 14,
+      "main_pains": [
+        "reports do not match",
+        "duplicates come back after cleanup",
+        "merging will break reports"
+      ],
+      "lead_with": [
+        "Find them: see how many duplicate records you have across systems",
+        "Keep them out: monitoring so duplicate records don't come back",
+        "Merge them: one record per customer, without breaking reports"
+      ],
+      "usable_proof": [
+        "p5",
+        "p1",
+        "p2",
+        "p4"
+      ]
     },
     {
-      "role": "Head of Data Engineering",
-      "won_deals": 6,
-      "main_pain": "duplicates come back after cleanup"
+      "name": "Data leader",
+      "titles": [
+        "VP of Data",
+        "Head of Data Engineering"
+      ],
+      "won_deals": 9,
+      "main_pains": [
+        "duplicates come back after cleanup",
+        "which record is the right one",
+        "merging will break reports"
+      ],
+      "lead_with": [
+        "Merge them: one record per customer, without breaking reports",
+        "Keep them out: monitoring so duplicate records don't come back"
+      ],
+      "usable_proof": [
+        "p2",
+        "p4",
+        "p1"
+      ]
     },
     {
-      "role": "BI Director",
-      "won_deals": 4,
-      "main_pain": "reports do not match"
+      "name": "Finance leader",
+      "titles": [
+        "CFO",
+        "VP Finance"
+      ],
+      "won_deals": 3,
+      "main_pains": [
+        "duplicates come back after cleanup",
+        "merging will break reports"
+      ],
+      "lead_with": [
+        "Keep them out: monitoring so duplicate records don't come back",
+        "Merge them: one record per customer, without breaking reports"
+      ],
+      "usable_proof": [
+        "p1",
+        "p2",
+        "p4"
+      ]
     }
   ],
   "pillars": [
@@ -71,7 +139,7 @@
       "pain_answered": [
         "duplicates come back after cleanup"
       ],
-      "proof": [
+      "usable_proof": [
         "p1",
         "p2"
       ],
@@ -83,7 +151,7 @@
         "merging will break reports",
         "which record is the right one"
       ],
-      "proof": [
+      "usable_proof": [
         "p2",
         "p4"
       ],
@@ -94,11 +162,47 @@
       "pain_answered": [
         "reports do not match"
       ],
-      "proof": [
-        "p5",
-        "p6"
+      "usable_proof": [
+        "p5"
       ],
       "only_us": true
+    }
+  ],
+  "proof_register": [
+    {
+      "id": "p1",
+      "usable": true,
+      "status": "expires soon (2026-12-31)"
+    },
+    {
+      "id": "p2",
+      "usable": true,
+      "status": "expires soon (2026-12-31)"
+    },
+    {
+      "id": "p3",
+      "usable": true,
+      "status": "expires soon (2026-12-31)"
+    },
+    {
+      "id": "p4",
+      "usable": true,
+      "status": "valid until 2027-06-30"
+    },
+    {
+      "id": "p5",
+      "usable": true,
+      "status": "valid until 2027-05-01"
+    },
+    {
+      "id": "p6",
+      "usable": false,
+      "status": "expired 2026-09-30"
+    },
+    {
+      "id": "p7",
+      "usable": false,
+      "status": "not approved"
     }
   ],
   "competitors": [

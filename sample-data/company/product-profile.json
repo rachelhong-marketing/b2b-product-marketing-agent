@@ -5,26 +5,157 @@
   "domain": "fernhill.example",
   "category": "customer data quality software that finds and merges duplicate customer records across systems",
   "voice": "Plain, confident, practical. Talk like a smart colleague, not a billboard.",
-  "avoid_words": ["best-in-class", "world-class", "revolutionary", "game-changer", "cutting-edge", "seamless", "synergy", "leverage", "leading", "fastest", "guarantee"],
-  "known_acronyms": ["FAQ", "AI", "CFO", "VP", "BI"],
+  "avoid_words": [
+    "best-in-class",
+    "world-class",
+    "revolutionary",
+    "game-changer",
+    "cutting-edge",
+    "seamless",
+    "synergy",
+    "leverage",
+    "leading",
+    "fastest",
+    "guarantee"
+  ],
+  "known_acronyms": [
+    "FAQ",
+    "AI",
+    "CFO",
+    "VP",
+    "BI"
+  ],
   "differentiators": [
-    {"id": "d1", "claim": "Keep them out: monitoring so duplicate records don't come back", "tags": ["ongoing monitoring"], "answers": ["duplicates come back after cleanup"],
-     "proof": [{"id": "p1", "type": "customer survey", "text": "Teams spend 30% of their week fixing data", "source": "2025 customer survey, n=120"},
-               {"id": "p2", "type": "customer survey", "text": "Customers cut data cleanup time by 40%", "source": "2025 customer survey, n=120"}]},
-    {"id": "d2", "claim": "Merge them: one record per customer, without breaking reports", "tags": ["safe merge"], "answers": ["merging will break reports", "which record is the right one"],
-     "proof": [{"id": "p2", "type": "customer survey", "text": "Customers cut data cleanup time by 40%", "source": "2025 customer survey, n=120"},
-               {"id": "p4", "type": "customer result", "text": "Made-up: a regional bank merged its customer records and month-end reports did not change", "source": "made-up customer webinar"}]},
-    {"id": "d3", "claim": "Find them: see how many duplicate records you have across systems", "tags": ["duplicate count"], "answers": ["reports do not match"],
-     "proof": [{"id": "p5", "type": "benchmark", "text": "Made-up: duplicate count shown within one day of connecting a system", "source": "made-up implementation note"},
-               {"id": "p6", "type": "benchmark", "text": "Made-up: the first scan found duplicates in all 20 pilot accounts", "source": "made-up pilot summary"}]},
-    {"id": "d4", "claim": "Set up in under two weeks", "tags": ["fast setup"], "answers": [],
-     "proof": [{"id": "p3", "type": "implementation records", "text": "Setup in under two weeks", "source": "Implementation records, 2025 median"}]},
-    {"id": "d5", "claim": "Works across customer relationship management (CRM), billing and support systems", "tags": ["cross-system"], "answers": [], "proof": []}
+    {
+      "id": "d1",
+      "claim": "Keep them out: monitoring so duplicate records don't come back",
+      "tags": [
+        "ongoing monitoring"
+      ],
+      "answers": [
+        "duplicates come back after cleanup"
+      ],
+      "proof": [
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "d2",
+      "claim": "Merge them: one record per customer, without breaking reports",
+      "tags": [
+        "safe merge"
+      ],
+      "answers": [
+        "merging will break reports",
+        "which record is the right one"
+      ],
+      "proof": [
+        "p2",
+        "p4"
+      ]
+    },
+    {
+      "id": "d3",
+      "claim": "Find them: see how many duplicate records you have across systems",
+      "tags": [
+        "duplicate count"
+      ],
+      "answers": [
+        "reports do not match"
+      ],
+      "proof": [
+        "p5",
+        "p6"
+      ]
+    },
+    {
+      "id": "d4",
+      "claim": "Set up in under two weeks",
+      "tags": [
+        "fast setup"
+      ],
+      "answers": [],
+      "proof": [
+        "p3"
+      ]
+    },
+    {
+      "id": "d5",
+      "claim": "Works across customer relationship management (CRM), billing and support systems",
+      "tags": [
+        "cross-system"
+      ],
+      "answers": [],
+      "proof": []
+    }
   ],
   "topics": [
-    {"theme": "duplicate records", "use_case": "duplicate cleanup", "triggers": ["duplicate records", "duplicate contacts", "duplicates", "dedupe", "deduplication"]},
-    {"theme": "trusted reporting", "use_case": "reporting trust", "triggers": ["data quality", "bad data", "reporting accuracy", "trusted data", "single source of truth"]},
-    {"theme": "customer data cleanup", "use_case": "cross-system merge", "triggers": ["data cleanup", "crm cleanup", "clean crm", "messy data", "data hygiene", "customer data"]},
-    {"theme": "data governance", "use_case": "data governance", "triggers": ["data governance", "master data management", "data stewardship"]}
+    {
+      "theme": "duplicate records",
+      "use_case": "duplicate cleanup",
+      "triggers": [
+        "duplicate records",
+        "duplicate contacts",
+        "duplicates",
+        "dedupe",
+        "deduplication"
+      ]
+    },
+    {
+      "theme": "trusted reporting",
+      "use_case": "reporting trust",
+      "triggers": [
+        "data quality",
+        "bad data",
+        "reporting accuracy",
+        "trusted data",
+        "single source of truth"
+      ]
+    },
+    {
+      "theme": "customer data cleanup",
+      "use_case": "cross-system merge",
+      "triggers": [
+        "data cleanup",
+        "crm cleanup",
+        "clean crm",
+        "messy data",
+        "data hygiene",
+        "customer data"
+      ]
+    },
+    {
+      "theme": "data governance",
+      "use_case": "data governance",
+      "triggers": [
+        "data governance",
+        "master data management",
+        "data stewardship"
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "name": "Data leader",
+      "titles": [
+        "VP of Data",
+        "Head of Data Engineering"
+      ]
+    },
+    {
+      "name": "Analytics leader",
+      "titles": [
+        "Director of Analytics",
+        "BI Director"
+      ]
+    },
+    {
+      "name": "Finance leader",
+      "titles": [
+        "CFO",
+        "VP Finance"
+      ]
+    }
   ]
 }

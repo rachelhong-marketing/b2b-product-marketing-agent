@@ -1,0 +1,61 @@
+account_id,industry,company_size,region,tech_stack,intent_topics,status
+A001,Retail,1000-10000,United States,customer data platform;enterprise CRM,data quality;customer data deduplication,open
+A002,Retail,over 10000,Canada,enterprise CRM;master data management tool,data governance;data quality,open
+A003,Financial services,1000-10000,United States,enterprise CRM;marketing automation;master data management tool,customer data deduplication;data governance,open
+A004,Financial services,1000-10000,United States,data warehouse;enterprise CRM,master data management,open
+A005,Financial services,1000-10000,United States,enterprise CRM;marketing automation;master data management tool,customer data deduplication;data governance,open
+A006,Financial services,1000-10000,United States,enterprise CRM;master data management tool,data quality,open
+A007,Insurance,1000-10000,Canada,customer data platform;enterprise CRM;master data management tool,data quality;customer data deduplication,open
+A008,Retail,over 10000,United States,customer data platform;enterprise CRM;master data management tool,data quality,open
+A009,Financial services,1000-10000,Canada,customer data platform;data warehouse;enterprise CRM,data governance,open
+A010,Retail,1000-10000,United States,enterprise CRM;marketing automation,master data management;customer data deduplication,open
+A011,Financial services,1000-10000,Canada,customer data platform;enterprise CRM;marketing automation,data quality;customer data deduplication,open
+A012,Manufacturing,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,data governance,open
+A013,Financial services,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,master data management;data governance,open
+A014,Healthcare,1000-10000,United States,enterprise CRM;marketing automation,customer data deduplication;master data management,open
+A015,Insurance,1000-10000,Canada,customer data platform;data warehouse;enterprise CRM,data governance,open
+A016,Retail,1000-10000,United States,customer data platform;data warehouse;enterprise CRM,data governance,open
+A017,Retail,1000-10000,United States,customer data platform;enterprise CRM;marketing automation,data quality;data governance,open
+A018,Manufacturing,1000-10000,United States,data warehouse;enterprise CRM,data governance,open
+A019,Retail,1000-10000,United States,data warehouse;enterprise CRM,customer data deduplication;data governance,open
+A020,Retail,over 10000,United States,customer data platform;data warehouse;enterprise CRM,data quality;master data management,open
+A021,Insurance,1000-10000,United States,data warehouse;enterprise CRM;marketing automation,data quality,open
+A022,Retail,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,customer data deduplication;data governance,open
+A023,Insurance,1000-10000,United States,customer data platform;enterprise CRM;marketing automation,master data management,open
+A024,Financial services,1000-10000,Canada,customer data platform;enterprise CRM;master data management tool,customer data deduplication;data quality,open
+A025,Retail,1000-10000,United States,customer data platform;data warehouse;enterprise CRM,data quality,open
+A026,Retail,1000-10000,Canada,customer data platform;enterprise CRM;master data management tool,data governance;data quality,open
+A027,Financial services,1000-10000,United States,enterprise CRM;marketing automation;master data management tool,data quality;data governance,open
+A028,Financial services,over 10000,Canada,data warehouse;enterprise CRM;marketing automation,master data management;data quality,open
+A029,Financial services,1000-10000,Canada,enterprise CRM;marketing automation,master data management;customer data deduplication,open
+A030,Retail,1000-10000,Canada,data warehouse;enterprise CRM;master data management tool,master data management;data quality,open
+A031,Retail,1000-10000,Canada,customer data platform;enterprise CRM;master data management tool,data governance;data quality,open
+A032,Financial services,1000-10000,Canada,enterprise CRM;marketing automation;master data management tool,master data management,open
+A033,Manufacturing,1000-10000,United States,data warehouse;enterprise CRM;marketing automation,master data management;customer data deduplication,open
+A034,Retail,over 10000,United States,customer data platform;data warehouse;enterprise CRM,data quality,open
+A035,Retail,over 10000,Canada,enterprise CRM;master data management tool,data quality;data governance,open
+A036,Retail,over 10000,United States,data warehouse;enterprise CRM,master data management;data quality,open
+A037,Insurance,1000-10000,United States,enterprise CRM;master data management tool,data quality,open
+A038,Retail,1000-10000,United States,customer data platform;enterprise CRM;marketing automation,master data management;data quality,open
+A039,Financial services,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,master data management;data quality,open
+A040,Retail,1000-10000,United States,customer data platform;enterprise CRM,data quality,open
+A041,Retail,1000-10000,Canada,enterprise CRM;master data management tool,data quality;master data management,open
+A042,Retail,1000-10000,United States,data warehouse;enterprise CRM;marketing automation,data quality;master data management,open
+A043,Financial services,1000-10000,United States,customer data platform;enterprise CRM,master data management,open
+A044,Insurance,1000-10000,United States,data warehouse;enterprise CRM;marketing automation,data governance;data quality,open
+A045,Retail,1000-10000,Canada,enterprise CRM;master data management tool,data quality;data governance,open
+A046,Retail,1000-10000,United States,customer data platform;data warehouse;enterprise CRM,master data management,open
+A047,Retail,1000-10000,United States,enterprise CRM;master data management tool,customer data deduplication;master data management,open
+A048,Retail,1000-10000,Canada,enterprise CRM;marketing automation,master data management,open
+A049,Financial services,1000-10000,United States,data warehouse;enterprise CRM,data quality,open
+A050,Retail,1000-10000,United States,data warehouse;enterprise CRM;master data management tool,data quality,open
+A051,Retail,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,data quality;customer data deduplication,open
+A052,Financial services,1000-10000,United States,data warehouse;enterprise CRM;master data management tool,customer data deduplication;data quality,open
+A053,Financial services,1000-10000,United States,customer data platform;enterprise CRM;master data management tool,customer data deduplication;data quality,open
+A054,Manufacturing,1000-10000,United States,data warehouse;enterprise CRM,data quality;data governance,open
+A055,Financial services,1000-10000,Canada,data warehouse;enterprise CRM;marketing automation,data quality;customer data deduplication,open
+A056,Financial services,1000-10000,United States,customer data platform;enterprise CRM,data governance,open
+A057,Manufacturing,1000-10000,United States,customer data platform;enterprise CRM;marketing automation,data quality;data governance,open
+A058,Financial services,1000-10000,Canada,data warehouse;enterprise CRM;master data management tool,data quality,open
+A059,Retail,1000-10000,United States,data warehouse;enterprise CRM;marketing automation,data governance,open
+A060,Retail,1000-10000,Canada,customer data platform;enterprise CRM;master data management tool,data quality;customer data deduplication,open

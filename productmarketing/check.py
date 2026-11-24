@@ -26,11 +26,16 @@ def check_doc(text, profile):
         for m in proofs:
             if "source:" not in m:
                 f(f"pillar {i} has a proof point with no source")
+    if "ICP status: DRAFT" in text:
+        f("the ideal customer profile is still a draft: the product marketer has not recorded a decision (use `decide`)")
+    undecided = len(re.findall(r"(?m)^- .*: needs a decision", text))
+    if undecided:
+        w(f"{undecided} ranked segment(s) still need a product marketer decision")
     if "## Positioning statement" not in text:
         f("no positioning statement section")
     if "Closed deals:" not in text:
         w("no 'Data used' section, so the evidence base is not stated")
-    known = set(profile.get("known_acronyms", []))
+    known = set(profile.get("known_acronyms", [])) | {"DRAFT"}
     seen = set()
     for m in re.finditer(r"\b[A-Z]{2,6}\b", text):
         a = m.group(0)

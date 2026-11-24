@@ -1,0 +1,8 @@
+id,type,text,source,approved_by,approved_on,expires_on,notes
+p1,customer survey,Teams spend 30% of their week fixing data,"2025 customer survey, n=120",Sample Product Marketer,2025-12-15,2026-12-31,approved list in the brand guidelines
+p2,customer survey,Customers cut data cleanup time by 40%,"2025 customer survey, n=120",Sample Product Marketer,2025-12-15,2026-12-31,approved list in the brand guidelines
+p3,implementation records,Setup in under two weeks,"Implementation records, 2025 median",Sample Product Marketer,2025-12-15,2026-12-31,approved list in the brand guidelines
+p4,customer result,Made-up: a regional bank merged its customer records and month-end reports did not change,made-up customer webinar,Sample Product Marketer,2026-06-20,2027-06-30,
+p5,benchmark,Made-up: duplicate count shown within one day of connecting a system,made-up implementation note,Sample Product Marketer,2026-05-01,2027-05-01,
+p6,benchmark,Made-up: the first scan found duplicates in all 20 pilot accounts,made-up pilot summary,Sample Product Marketer,2025-09-01,2026-09-30,pilot figure; needs a refresh
+p7,customer result,Made-up: a retailer cut duplicate customer records by half in one quarter,made-up customer story,,,,waiting for customer sign-off

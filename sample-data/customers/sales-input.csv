@@ -1,0 +1,14 @@
+deal_id,rep_id,note_type,note,date
+D001,R1,why-won,Made-up: the champion had just been blamed for a wrong customer count,2026-08-12
+D002,R2,trigger,Made-up: a merger doubled their customer records overnight,2026-08-20
+D006,R1,why-won,Made-up: monitoring after cleanup was the deciding feature,2026-09-02
+D003,R3,why-lost,Made-up: they said their own team would clean it up this quarter,2026-09-05
+D004,R2,objection,Made-up: worried a merge would change month-end numbers,2026-09-09
+D015,R4,why-won,Made-up: audit asked where a customer number came from,2026-07-30
+D016,R4,objection,Made-up: security review took six weeks,2026-08-14
+D017,R3,why-lost,Made-up: budget closed before the security review ended,2026-09-12
+D048,R1,why-won,Made-up: a quality program needed one record per patient-facing customer,2026-08-27
+D052,R2,trigger,Made-up: a system migration was already funded,2026-09-18
+D039,R3,why-lost,"Made-up: duplicates were seen as a tech chore, not a revenue problem",2026-09-22
+D040,R3,why-lost,Made-up: the buying group saw duplicates as a clean-up chore with no revenue owner,2026-09-22
+D041,R3,other,Made-up: buying group had no analytics leader,2026-09-24

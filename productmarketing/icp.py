@@ -48,8 +48,12 @@ def lost_competitors(deals):
     return c.most_common()
 
 
-def table_lines(segs):
-    L = ["| Segment | Closed deals | Win rate | Average contract value | Days to close | 12-month retention | Score | Note |", "|---|---|---|---|---|---|---|---|"]
+def table_lines(segs, list_counts=None, decisions=None):
+    from . import decisions as dec
+    list_counts = list_counts or {}
+    decisions = decisions or {}
+    L = ["| Segment | Closed deals | Win rate | Average contract value | Days to close | 12-month retention | Score | On target list | Product marketer decision | Note |",
+         "|---|---|---|---|---|---|---|---|---|---|"]
     for s in segs:
         note = ""
         if s["deals"] < MIN_DEALS:
@@ -61,7 +65,13 @@ def table_lines(segs):
         if s["rankable"] and s["retention_n"] and s["retention_n"] < 3:
             note = (note + "; " if note else "") + "retention from under 3 customers"
         none = "n/a (no wins)" if s["won"] == 0 else "[MISSING]"
+        d = dec.of(decisions, dec.label(s))
+        if d:
+            shown = f"{d['decision']} ({d['decided_by']}, {d['date']})"
+        else:
+            shown = "needs decision" if s["rankable"] else "not ranked"
+        n_list = list_counts.get((s["industry"], s["size"]), 0) if list_counts else "[MISSING]"
         L.append(f"| {s['industry']}, {s['size']} employees | {s['deals']} | {100 * s['win_rate']:.0f}% | "
                  f"{'$' + format(s['acv'], ',.0f') if s['acv'] else none} | {format(s['days'], '.0f') if s['days'] else none} | "
-                 f"{'%.0f%%' % (100 * s['retention']) if s['retention'] is not None else none} | {s.get('score', '')} | {note} |")
+                 f"{'%.0f%%' % (100 * s['retention']) if s['retention'] is not None else none} | {s.get('score', '')} | {n_list} | {shown} | {note} |")
     return L

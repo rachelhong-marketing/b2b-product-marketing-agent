@@ -4,9 +4,9 @@
   "note": "Starter profile exported by the product marketing agent. Review before use.",
   "domain": "fernhill.example",
   "audiences": [
-    "Director of Analytics",
-    "Head of Data Engineering",
-    "BI Director"
+    "Analytics leader (Director of Analytics, BI Director)",
+    "Data leader (VP of Data, Head of Data Engineering)",
+    "Finance leader (CFO, VP Finance)"
   ],
   "voice": "Plain, confident, practical. Talk like a smart colleague, not a billboard.",
   "avoid_words": [
