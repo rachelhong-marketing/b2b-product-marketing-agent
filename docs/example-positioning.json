@@ -1,0 +1,115 @@
+{
+  "brand": "Fernhill Software",
+  "product": "Fernhill Cleanse",
+  "category": "customer relationship management (CRM) data quality software",
+  "statement_parts": [
+    {
+      "label": "For",
+      "text": "RevOps managers at B2B SaaS companies with 200-1000 employees"
+    },
+    {
+      "label": "Whose problem is",
+      "text": "duplicates come back after cleanup"
+    },
+    {
+      "label": "Fernhill Cleanse is",
+      "text": "customer relationship management (CRM) data quality software"
+    },
+    {
+      "label": "The main benefit (write one sentence)",
+      "text": "[MISSING: write it. Strongest pillar: A person approves every merge in a review queue]"
+    },
+    {
+      "label": "Unlike (most named in lost deals)",
+      "text": "tidybase"
+    },
+    {
+      "label": "What only we do (write one sentence)",
+      "text": "[MISSING: write it. Claim nobody tracked makes: A person approves every merge in a review queue]"
+    }
+  ],
+  "icp": [
+    {
+      "industry": "B2B SaaS",
+      "company_size": "200-1000",
+      "deals": 12,
+      "score": 61.5
+    },
+    {
+      "industry": "Financial services",
+      "company_size": "200-1000",
+      "deals": 10,
+      "score": 60.0
+    },
+    {
+      "industry": "B2B SaaS",
+      "company_size": "under 200",
+      "deals": 8,
+      "score": 53.1
+    }
+  ],
+  "personas": [
+    {
+      "role": "RevOps manager",
+      "won_deals": 9,
+      "main_pain": "duplicates come back after cleanup"
+    },
+    {
+      "role": "CRM administrator",
+      "won_deals": 5,
+      "main_pain": "depend on engineers to change matching rules"
+    },
+    {
+      "role": "Head of analytics",
+      "won_deals": 3,
+      "main_pain": "reports do not match between teams"
+    }
+  ],
+  "pillars": [
+    {
+      "claim": "A person approves every merge in a review queue",
+      "pain_answered": [
+        "merged wrong people by mistake"
+      ],
+      "proof": [
+        "p1",
+        "p2"
+      ],
+      "only_us": true
+    },
+    {
+      "claim": "Matching rules a RevOps manager can edit without code",
+      "pain_answered": [
+        "depend on engineers to change matching rules"
+      ],
+      "proof": [
+        "p3",
+        "p4"
+      ],
+      "only_us": false
+    },
+    {
+      "claim": "Uses AI to match records",
+      "pain_answered": [
+        "reports do not match between teams"
+      ],
+      "proof": [
+        "p6"
+      ],
+      "only_us": false
+    }
+  ],
+  "competitors": [
+    "tidybase",
+    "cleanly",
+    "datafix"
+  ],
+  "avoid_words": [
+    "revolutionary",
+    "game-changing",
+    "best-in-class",
+    "leading",
+    "unique",
+    "cutting-edge"
+  ]
+}

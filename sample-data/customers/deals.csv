@@ -1,0 +1,69 @@
+deal_id,industry,company_size,buyer_role,outcome,acv,days_to_close,use_case,retained_12m,lost_reason,competitor
+D001,B2B SaaS,200-1000,Head of analytics,won,14994,63,duplicate cleanup,yes,,
+D002,B2B SaaS,200-1000,RevOps manager,won,27388,61,duplicate cleanup,yes,,
+D003,B2B SaaS,200-1000,RevOps manager,lost,,43,crm migration prep,,no decision,cleanly
+D004,B2B SaaS,200-1000,RevOps manager,lost,,47,duplicate cleanup,,chose a competitor,cleanly
+D005,B2B SaaS,200-1000,RevOps manager,lost,,57,lead routing accuracy,,chose a competitor,cleanly
+D006,B2B SaaS,200-1000,Head of analytics,lost,,42,duplicate cleanup,,no decision,tidybase
+D007,B2B SaaS,200-1000,RevOps manager,won,18936,64,duplicate cleanup,yes,,
+D008,B2B SaaS,200-1000,RevOps manager,won,22824,54,lead routing accuracy,yes,,
+D009,B2B SaaS,200-1000,RevOps manager,won,14856,77,duplicate cleanup,yes,,
+D010,B2B SaaS,200-1000,RevOps manager,lost,,17,reporting trust,,no budget,tidybase
+D011,B2B SaaS,200-1000,RevOps manager,lost,,62,reporting trust,,built in house,tidybase
+D012,B2B SaaS,200-1000,RevOps manager,won,31881,49,duplicate cleanup,yes,,
+D013,B2B SaaS,under 200,RevOps manager,lost,,42,duplicate cleanup,,no decision,cleanly
+D014,B2B SaaS,under 200,RevOps manager,lost,,34,duplicate cleanup,,no budget,none
+D015,B2B SaaS,under 200,Marketing operations manager,won,9055,29,lead routing accuracy,yes,,
+D016,B2B SaaS,under 200,RevOps manager,lost,,39,lead routing accuracy,,no decision,tidybase
+D017,B2B SaaS,under 200,RevOps manager,won,14503,31,lead routing accuracy,yes,,
+D018,B2B SaaS,under 200,RevOps manager,won,10354,34,duplicate cleanup,yes,,
+D019,B2B SaaS,under 200,Head of analytics,lost,,32,duplicate cleanup,,no decision,none
+D020,B2B SaaS,under 200,RevOps manager,lost,,33,duplicate cleanup,,built in house,cleanly
+D021,B2B SaaS,over 1000,RevOps manager,lost,,105,duplicate cleanup,,chose a competitor,cleanly
+D022,B2B SaaS,over 1000,Marketing operations manager,lost,,150,reporting trust,,chose a competitor,tidybase
+D023,B2B SaaS,over 1000,RevOps manager,won,48990,123,reporting trust,yes,,
+D024,B2B SaaS,over 1000,Head of analytics,lost,,166,reporting trust,,no budget,cleanly
+D025,B2B SaaS,over 1000,RevOps manager,lost,,144,lead routing accuracy,,no decision,tidybase
+D026,B2B SaaS,over 1000,RevOps manager,won,69778,119,reporting trust,yes,,
+D027,Financial services,200-1000,VP revenue operations,won,35122,89,duplicate cleanup,yes,,
+D028,Financial services,200-1000,CRM administrator,won,47164,129,crm migration prep,yes,,
+D029,Financial services,200-1000,VP revenue operations,won,36640,118,reporting trust,yes,,
+D030,Financial services,200-1000,VP revenue operations,lost,,82,lead routing accuracy,,no decision,tidybase
+D031,Financial services,200-1000,CRM administrator,lost,,90,duplicate cleanup,,chose a competitor,none
+D032,Financial services,200-1000,CRM administrator,lost,,106,duplicate cleanup,,security review,cleanly
+D033,Financial services,200-1000,VP revenue operations,lost,,73,duplicate cleanup,,no budget,tidybase
+D034,Financial services,200-1000,CRM administrator,lost,,123,duplicate cleanup,,no decision,none
+D035,Financial services,200-1000,VP revenue operations,won,35591,88,duplicate cleanup,no,,
+D036,Financial services,200-1000,CRM administrator,lost,,68,lead routing accuracy,,no budget,none
+D037,Financial services,over 1000,CRM administrator,lost,,226,duplicate cleanup,,no budget,tidybase
+D038,Financial services,over 1000,VP revenue operations,lost,,123,duplicate cleanup,,no budget,none
+D039,Financial services,over 1000,VP revenue operations,lost,,153,reporting trust,,built in house,cleanly
+D040,Financial services,over 1000,VP revenue operations,lost,,87,reporting trust,,no decision,none
+D041,Financial services,over 1000,VP revenue operations,lost,,142,reporting trust,,no budget,datafix
+D042,Manufacturing,200-1000,Marketing operations manager,lost,,125,duplicate cleanup,,chose a competitor,none
+D043,Manufacturing,200-1000,CRM administrator,lost,,66,duplicate cleanup,,chose a competitor,cleanly
+D044,Manufacturing,200-1000,CRM administrator,lost,,93,reporting trust,,chose a competitor,tidybase
+D045,Manufacturing,200-1000,CRM administrator,lost,,44,duplicate cleanup,,no budget,none
+D046,Manufacturing,200-1000,Marketing operations manager,lost,,89,lead routing accuracy,,no budget,datafix
+D047,Manufacturing,200-1000,CRM administrator,won,12955,103,reporting trust,yes,,
+D048,Manufacturing,200-1000,CRM administrator,lost,,147,duplicate cleanup,,no budget,none
+D049,Manufacturing,200-1000,CRM administrator,lost,,111,duplicate cleanup,,no decision,tidybase
+D050,Manufacturing,200-1000,CRM administrator,lost,,125,duplicate cleanup,,no decision,cleanly
+D051,Healthcare,200-1000,Head of analytics,won,29639,139,crm migration prep,yes,,
+D052,Healthcare,200-1000,CRM administrator,won,29226,122,crm migration prep,yes,,
+D053,Healthcare,200-1000,CRM administrator,lost,,65,duplicate cleanup,,chose a competitor,none
+D054,Healthcare,200-1000,Head of analytics,lost,,127,duplicate cleanup,,no budget,none
+D055,Healthcare,200-1000,CRM administrator,won,24434,122,crm migration prep,yes,,
+D056,Healthcare,200-1000,Head of analytics,lost,,67,duplicate cleanup,,security review,tidybase
+D057,Healthcare,200-1000,Head of analytics,won,45116,168,crm migration prep,no,,
+D058,Healthcare,200-1000,Head of analytics,lost,,91,duplicate cleanup,,built in house,tidybase
+D059,Agencies,under 200,Marketing operations manager,won,4049,17,crm migration prep,no,,
+D060,Agencies,under 200,Marketing operations manager,won,5710,20,crm migration prep,yes,,
+D061,Agencies,under 200,Marketing operations manager,lost,,7,crm migration prep,,no decision,none
+D062,Agencies,under 200,RevOps manager,lost,,23,lead routing accuracy,,security review,tidybase
+D063,Agencies,under 200,RevOps manager,lost,,15,crm migration prep,,no decision,cleanly
+D064,Agencies,under 200,Marketing operations manager,lost,,19,reporting trust,,no decision,none
+D065,Agencies,under 200,Marketing operations manager,lost,,19,crm migration prep,,no budget,datafix
+D066,Education,under 200,CRM administrator,lost,,45,reporting trust,,no budget,tidybase
+D067,Education,under 200,CRM administrator,lost,,66,crm migration prep,,no budget,tidybase
+D068,Education,under 200,CRM administrator,won,7641,51,reporting trust,no,,

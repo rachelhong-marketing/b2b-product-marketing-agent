@@ -1,0 +1,29 @@
+{
+  "brand": "Fernhill Software",
+  "product": "Fernhill Cleanse",
+  "note": "Made-up example. Fernhill is a fictional company that sells software to clean up duplicate and messy customer records in a CRM (customer relationship management system).",
+  "domain": "fernhill.example",
+  "category": "customer relationship management (CRM) data quality software",
+  "voice": "Plain, confident, practical. No fear-based messaging and no hype words.",
+  "avoid_words": ["revolutionary", "game-changing", "best-in-class", "leading", "unique", "cutting-edge"],
+  "known_acronyms": ["FAQ", "AI"],
+  "differentiators": [
+    {"id": "d1", "claim": "A person approves every merge in a review queue", "tags": ["human review"], "answers": ["merged wrong people by mistake"],
+     "proof": [{"id": "p1", "type": "customer result", "text": "Made-up: 0 wrong merges in 40,000 reviewed pairs at one customer", "source": "made-up case study A"},
+               {"id": "p2", "type": "benchmark", "text": "Made-up: reviewers cleared 120 near matches per hour in a pilot", "source": "made-up internal pilot"}]},
+    {"id": "d2", "claim": "Matching rules a RevOps manager can edit without code", "tags": ["no code"], "answers": ["depend on engineers to change matching rules"],
+     "proof": [{"id": "p3", "type": "customer result", "text": "Made-up: a rule change went live in one afternoon at one customer", "source": "made-up case study B"},
+               {"id": "p4", "type": "third party", "text": "Made-up: rated 4.6 of 5 for ease of setup in a review site", "source": "made-up review site"}]},
+    {"id": "d3", "claim": "Live in days, not a quarter", "tags": ["fast setup"], "answers": ["long implementation"],
+     "proof": [{"id": "p5", "type": "customer result", "text": "Made-up: median 6 days from contract to first merge across 20 customers", "source": "made-up onboarding data"}]},
+    {"id": "d4", "claim": "Keeps records clean after the first cleanup", "tags": ["ongoing monitoring"], "answers": ["duplicates come back after cleanup"], "proof": []},
+    {"id": "d5", "claim": "Uses AI to match records", "tags": ["ai matching"], "answers": ["reports do not match between teams"],
+     "proof": [{"id": "p6", "type": "benchmark", "text": "Made-up: 94 percent of exact twins found in a test set", "source": "made-up internal test"}]}
+  ],
+  "topics": [
+    {"theme": "duplicate records", "use_case": "duplicate cleanup", "triggers": ["duplicate records", "duplicate contacts", "duplicates", "dedupe", "deduplication"]},
+    {"theme": "trusted reporting", "use_case": "reporting trust", "triggers": ["data quality", "bad data", "reporting accuracy", "trusted data", "single source of truth"]},
+    {"theme": "crm migration", "use_case": "crm migration prep", "triggers": ["crm migration", "migrating crm", "data migration"]},
+    {"theme": "lead routing", "use_case": "lead routing accuracy", "triggers": ["lead routing", "lead assignment"]}
+  ]
+}

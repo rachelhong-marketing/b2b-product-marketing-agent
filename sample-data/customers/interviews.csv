@@ -1,0 +1,13 @@
+interview_id,role,industry,pain,trigger,current_alternative,quote
+I01,RevOps manager,B2B SaaS,reports do not match between teams,new vice president asked for one pipeline number,spreadsheets and a monthly manual merge,"Made-up quote: every team had a different number and I was the one explaining it."
+I02,RevOps manager,B2B SaaS,merged wrong people by mistake,a bad merge deleted a customer's history,a CRM built-in merge tool,"Made-up quote: we merged two different people once and never trusted auto-merge again."
+I03,CRM administrator,Financial services,depend on engineers to change matching rules,rule change took six weeks,a custom script owned by one engineer,"Made-up quote: I wait on engineering for a rule that takes me five minutes to describe."
+I04,CRM administrator,Healthcare,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup vendor,"Made-up quote: we paid for a cleanup and it was back in four months."
+I05,Marketing operations manager,Agencies,campaign emails sent twice to the same person,a customer complained,manual list checks before sends,"Made-up quote: the same buyer got our email twice in one day."
+I06,Head of analytics,B2B SaaS,reports do not match between teams,board deck numbers were challenged,spreadsheets and a monthly manual merge,"Made-up quote: I cannot defend a number I cannot trace."
+I07,VP revenue operations,Financial services,long implementation,last tool took a quarter to roll out,an enterprise data governance suite,"Made-up quote: a quarter-long rollout is a non-starter."
+I08,RevOps manager,B2B SaaS,duplicates come back after cleanup,new form added a second source of records,a CRM built-in merge tool,"Made-up quote: every new form creates a fresh batch."
+I09,CRM administrator,Manufacturing,merged wrong people by mistake,sales rep lost a contact's notes,a CRM built-in merge tool,"Made-up quote: reps blame the cleanup when notes disappear."
+I10,Head of analytics,Healthcare,reports do not match between teams,audit asked where a number came from,spreadsheets and a monthly manual merge,"Made-up quote: the audit trail is the whole point."
+I11,Marketing operations manager,B2B SaaS,depend on engineers to change matching rules,a new product line needed new rules,a custom script owned by one engineer,"Made-up quote: every change is a ticket."
+I12,RevOps manager,Financial services,long implementation,budget cycle closed before go-live,an enterprise data governance suite,"Made-up quote: it was live after the budget window shut."

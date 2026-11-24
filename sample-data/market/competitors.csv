@@ -1,0 +1,4 @@
+name,claim,claim_tags,price_tier,source_url
+tidybase,"AI-powered matching for any CRM","ai matching;fast setup",mid,https://tidybase.example/product
+cleanly,"Clean your CRM in minutes","fast setup;ai matching;no code",low,https://cleanly.example/product
+datafix,"Enterprise data governance suite","governance;ongoing monitoring",high,https://datafix.example/platform

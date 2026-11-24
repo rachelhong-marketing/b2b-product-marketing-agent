@@ -1,0 +1,75 @@
+{
+  "brand": "Fernhill Software",
+  "product": "Fernhill Cleanse",
+  "note": "Starter profile exported by the product marketing agent. Review before use.",
+  "domain": "fernhill.example",
+  "audiences": [
+    "RevOps manager",
+    "CRM administrator",
+    "Head of analytics"
+  ],
+  "voice": "Plain, confident, practical. No fear-based messaging and no hype words.",
+  "avoid_words": [
+    "revolutionary",
+    "game-changing",
+    "best-in-class",
+    "leading",
+    "unique",
+    "cutting-edge"
+  ],
+  "known_acronyms": [
+    "FAQ",
+    "AI"
+  ],
+  "themes": {
+    "duplicate records": {
+      "fit": 1.0,
+      "triggers": [
+        "duplicate records",
+        "duplicate contacts",
+        "duplicates",
+        "dedupe",
+        "deduplication"
+      ]
+    },
+    "trusted reporting": {
+      "fit": 0.62,
+      "triggers": [
+        "data quality",
+        "bad data",
+        "reporting accuracy",
+        "trusted data",
+        "single source of truth"
+      ]
+    },
+    "crm migration": {
+      "fit": 0.88,
+      "triggers": [
+        "crm migration",
+        "migrating crm",
+        "data migration"
+      ]
+    },
+    "lead routing": {
+      "fit": 0.38,
+      "triggers": [
+        "lead routing",
+        "lead assignment"
+      ]
+    }
+  },
+  "competitors": [
+    {
+      "name": "tidybase",
+      "note": "AI-powered matching for any CRM"
+    },
+    {
+      "name": "cleanly",
+      "note": "Clean your CRM in minutes"
+    },
+    {
+      "name": "datafix",
+      "note": "Enterprise data governance suite"
+    }
+  ]
+}
