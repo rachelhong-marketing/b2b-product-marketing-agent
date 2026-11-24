@@ -1,13 +1,31 @@
-interview_id,role,industry,pain,trigger,current_alternative,quote
-I01,RevOps manager,B2B SaaS,reports do not match between teams,new vice president asked for one pipeline number,spreadsheets and a monthly manual merge,"Made-up quote: every team had a different number and I was the one explaining it."
-I02,RevOps manager,B2B SaaS,merged wrong people by mistake,a bad merge deleted a customer's history,a CRM built-in merge tool,"Made-up quote: we merged two different people once and never trusted auto-merge again."
-I03,CRM administrator,Financial services,depend on engineers to change matching rules,rule change took six weeks,a custom script owned by one engineer,"Made-up quote: I wait on engineering for a rule that takes me five minutes to describe."
-I04,CRM administrator,Healthcare,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup vendor,"Made-up quote: we paid for a cleanup and it was back in four months."
-I05,Marketing operations manager,Agencies,campaign emails sent twice to the same person,a customer complained,manual list checks before sends,"Made-up quote: the same buyer got our email twice in one day."
-I06,Head of analytics,B2B SaaS,reports do not match between teams,board deck numbers were challenged,spreadsheets and a monthly manual merge,"Made-up quote: I cannot defend a number I cannot trace."
-I07,VP revenue operations,Financial services,long implementation,last tool took a quarter to roll out,an enterprise data governance suite,"Made-up quote: a quarter-long rollout is a non-starter."
-I08,RevOps manager,B2B SaaS,duplicates come back after cleanup,new form added a second source of records,a CRM built-in merge tool,"Made-up quote: every new form creates a fresh batch."
-I09,CRM administrator,Manufacturing,merged wrong people by mistake,sales rep lost a contact's notes,a CRM built-in merge tool,"Made-up quote: reps blame the cleanup when notes disappear."
-I10,Head of analytics,Healthcare,reports do not match between teams,audit asked where a number came from,spreadsheets and a monthly manual merge,"Made-up quote: the audit trail is the whole point."
-I11,Marketing operations manager,B2B SaaS,depend on engineers to change matching rules,a new product line needed new rules,a custom script owned by one engineer,"Made-up quote: every change is a ticket."
-I12,RevOps manager,Financial services,long implementation,budget cycle closed before go-live,an enterprise data governance suite,"Made-up quote: it was live after the budget window shut."
+interview_id,source,role,industry,pain,trigger,current_alternative,quote
+I01,win-loss,VP of Data,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I02,win-loss,Director of Analytics,Financial services,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I03,win-loss,Head of Data Engineering,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I04,win-loss,CFO,Financial services,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I05,win-loss,BI Director,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I06,win-loss,VP of Data,Financial services,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I07,win-loss,Director of Analytics,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I08,win-loss,Head of Data Engineering,Financial services,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I09,win-loss,CFO,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I10,win-loss,BI Director,Financial services,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I11,win-loss,VP of Data,Retail,duplicates come back after cleanup,a cleanup project in spring and the same mess by fall,a one-time cleanup project,Made-up quote: we cleaned it once and it was back within months.
+I12,win-loss,Director of Analytics,Retail,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I13,win-loss,Head of Data Engineering,Financial services,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I14,win-loss,CFO,Healthcare,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I15,win-loss,BI Director,Retail,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I16,win-loss,VP of Data,Financial services,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I17,win-loss,Director of Analytics,Healthcare,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I18,win-loss,Head of Data Engineering,Retail,merging will break reports,fear of changing month-end numbers,do it ourselves this quarter,"Made-up quote: if a merge changes month-end, I own that."
+I19,customer call,Director of Analytics,Retail,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I20,customer call,BI Director,Financial services,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I21,customer call,Director of Analytics,Retail,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I22,customer call,BI Director,Financial services,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I23,customer call,Director of Analytics,Retail,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I24,customer call,BI Director,Financial services,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I25,customer call,Director of Analytics,Retail,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I26,customer call,BI Director,Financial services,reports do not match,two teams showed different customer counts,spreadsheet reconciliation,Made-up quote: I blamed the reporting tool. It was the records.
+I27,customer call,VP of Data,Retail,which record is the right one,first question in an evaluation,manual rules in scripts,Made-up quote: how do we know which record is the right one?
+I28,customer call,Head of Data Engineering,Financial services,which record is the right one,first question in an evaluation,manual rules in scripts,Made-up quote: how do we know which record is the right one?
+I29,customer call,VP of Data,Retail,which record is the right one,first question in an evaluation,manual rules in scripts,Made-up quote: how do we know which record is the right one?
+I30,customer call,Head of Data Engineering,Financial services,which record is the right one,first question in an evaluation,manual rules in scripts,Made-up quote: how do we know which record is the right one?

@@ -1,75 +1,75 @@
 {
   "brand": "Fernhill Software",
-  "product": "Fernhill Cleanse",
-  "category": "customer relationship management (CRM) data quality software",
+  "product": "Fernhill Data Quality Platform",
+  "category": "customer data quality software that finds and merges duplicate customer records across systems",
   "statement_parts": [
     {
       "label": "For",
-      "text": "RevOps managers at B2B SaaS companies with 200-1000 employees"
+      "text": "Director of Analytics at financial services companies with 1000-10000 employees"
     },
     {
       "label": "Whose problem is",
-      "text": "duplicates come back after cleanup"
+      "text": "reports do not match"
     },
     {
-      "label": "Fernhill Cleanse is",
-      "text": "customer relationship management (CRM) data quality software"
+      "label": "Fernhill Data Quality Platform is",
+      "text": "customer data quality software that finds and merges duplicate customer records across systems"
     },
     {
       "label": "The main benefit (write one sentence)",
-      "text": "[MISSING: write it. Strongest pillar: A person approves every merge in a review queue]"
+      "text": "[MISSING: write it. Strongest pillar: Keep them out: monitoring so duplicate records don't come back]"
     },
     {
       "label": "Unlike (most named in lost deals)",
-      "text": "tidybase"
+      "text": "Clearline Data"
     },
     {
       "label": "What only we do (write one sentence)",
-      "text": "[MISSING: write it. Claim nobody tracked makes: A person approves every merge in a review queue]"
+      "text": "[MISSING: write it. Claim nobody tracked makes: Keep them out: monitoring so duplicate records don't come back]"
     }
   ],
   "icp": [
     {
-      "industry": "B2B SaaS",
-      "company_size": "200-1000",
-      "deals": 12,
-      "score": 61.5
-    },
-    {
       "industry": "Financial services",
-      "company_size": "200-1000",
-      "deals": 10,
-      "score": 60.0
+      "company_size": "1000-10000",
+      "deals": 12,
+      "score": 59.7
     },
     {
-      "industry": "B2B SaaS",
-      "company_size": "under 200",
+      "industry": "Retail",
+      "company_size": "1000-10000",
+      "deals": 14,
+      "score": 58.6
+    },
+    {
+      "industry": "Healthcare",
+      "company_size": "1000-10000",
       "deals": 8,
-      "score": 53.1
+      "score": 40.0
     }
   ],
   "personas": [
     {
-      "role": "RevOps manager",
-      "won_deals": 9,
+      "role": "Director of Analytics",
+      "won_deals": 10,
+      "main_pain": "reports do not match"
+    },
+    {
+      "role": "Head of Data Engineering",
+      "won_deals": 6,
       "main_pain": "duplicates come back after cleanup"
     },
     {
-      "role": "CRM administrator",
-      "won_deals": 5,
-      "main_pain": "depend on engineers to change matching rules"
-    },
-    {
-      "role": "Head of analytics",
-      "won_deals": 3,
-      "main_pain": "reports do not match between teams"
+      "role": "BI Director",
+      "won_deals": 4,
+      "main_pain": "reports do not match"
     }
   ],
   "pillars": [
     {
-      "claim": "A person approves every merge in a review queue",
+      "claim": "Keep them out: monitoring so duplicate records don't come back",
       "pain_answered": [
-        "merged wrong people by mistake"
+        "duplicates come back after cleanup"
       ],
       "proof": [
         "p1",
@@ -78,38 +78,45 @@
       "only_us": true
     },
     {
-      "claim": "Matching rules a RevOps manager can edit without code",
+      "claim": "Merge them: one record per customer, without breaking reports",
       "pain_answered": [
-        "depend on engineers to change matching rules"
+        "merging will break reports",
+        "which record is the right one"
       ],
       "proof": [
-        "p3",
+        "p2",
         "p4"
       ],
-      "only_us": false
+      "only_us": true
     },
     {
-      "claim": "Uses AI to match records",
+      "claim": "Find them: see how many duplicate records you have across systems",
       "pain_answered": [
-        "reports do not match between teams"
+        "reports do not match"
       ],
       "proof": [
+        "p5",
         "p6"
       ],
-      "only_us": false
+      "only_us": true
     }
   ],
   "competitors": [
-    "tidybase",
-    "cleanly",
-    "datafix"
+    "Clearline Data",
+    "Datavault Pro",
+    "Purestream"
   ],
   "avoid_words": [
-    "revolutionary",
-    "game-changing",
     "best-in-class",
+    "world-class",
+    "revolutionary",
+    "game-changer",
+    "cutting-edge",
+    "seamless",
+    "synergy",
+    "leverage",
     "leading",
-    "unique",
-    "cutting-edge"
+    "fastest",
+    "guarantee"
   ]
 }

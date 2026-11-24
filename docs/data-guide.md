@@ -1,13 +1,13 @@
 # Data guide
 
-All sample files are made up. Fernhill Software is a fictional company. Use your own data in your own private folder, never in a public repo.
+All sample files are made up. Fernhill Software is a fictional company, the same one used across the toolkit. Use your own data in your own private folder, never in a public repo.
 
 ## `customers/deals.csv` (from your CRM, one row per closed deal)
 
 | Column | Meaning |
 |---|---|
 | deal_id | Any id. Do not put customer names in this file |
-| industry, company_size | Your own groupings, for example "B2B SaaS" and "200-1000" |
+| industry, company_size | Your own groupings, for example "Retail" and "1000-10000" |
 | buyer_role | The job title of the person who signed or led the buying |
 | outcome | won or lost |
 | acv | Annual contract value for won deals |

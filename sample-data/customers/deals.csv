@@ -1,69 +1,65 @@
 deal_id,industry,company_size,buyer_role,outcome,acv,days_to_close,use_case,retained_12m,lost_reason,competitor
-D001,B2B SaaS,200-1000,Head of analytics,won,14994,63,duplicate cleanup,yes,,
-D002,B2B SaaS,200-1000,RevOps manager,won,27388,61,duplicate cleanup,yes,,
-D003,B2B SaaS,200-1000,RevOps manager,lost,,43,crm migration prep,,no decision,cleanly
-D004,B2B SaaS,200-1000,RevOps manager,lost,,47,duplicate cleanup,,chose a competitor,cleanly
-D005,B2B SaaS,200-1000,RevOps manager,lost,,57,lead routing accuracy,,chose a competitor,cleanly
-D006,B2B SaaS,200-1000,Head of analytics,lost,,42,duplicate cleanup,,no decision,tidybase
-D007,B2B SaaS,200-1000,RevOps manager,won,18936,64,duplicate cleanup,yes,,
-D008,B2B SaaS,200-1000,RevOps manager,won,22824,54,lead routing accuracy,yes,,
-D009,B2B SaaS,200-1000,RevOps manager,won,14856,77,duplicate cleanup,yes,,
-D010,B2B SaaS,200-1000,RevOps manager,lost,,17,reporting trust,,no budget,tidybase
-D011,B2B SaaS,200-1000,RevOps manager,lost,,62,reporting trust,,built in house,tidybase
-D012,B2B SaaS,200-1000,RevOps manager,won,31881,49,duplicate cleanup,yes,,
-D013,B2B SaaS,under 200,RevOps manager,lost,,42,duplicate cleanup,,no decision,cleanly
-D014,B2B SaaS,under 200,RevOps manager,lost,,34,duplicate cleanup,,no budget,none
-D015,B2B SaaS,under 200,Marketing operations manager,won,9055,29,lead routing accuracy,yes,,
-D016,B2B SaaS,under 200,RevOps manager,lost,,39,lead routing accuracy,,no decision,tidybase
-D017,B2B SaaS,under 200,RevOps manager,won,14503,31,lead routing accuracy,yes,,
-D018,B2B SaaS,under 200,RevOps manager,won,10354,34,duplicate cleanup,yes,,
-D019,B2B SaaS,under 200,Head of analytics,lost,,32,duplicate cleanup,,no decision,none
-D020,B2B SaaS,under 200,RevOps manager,lost,,33,duplicate cleanup,,built in house,cleanly
-D021,B2B SaaS,over 1000,RevOps manager,lost,,105,duplicate cleanup,,chose a competitor,cleanly
-D022,B2B SaaS,over 1000,Marketing operations manager,lost,,150,reporting trust,,chose a competitor,tidybase
-D023,B2B SaaS,over 1000,RevOps manager,won,48990,123,reporting trust,yes,,
-D024,B2B SaaS,over 1000,Head of analytics,lost,,166,reporting trust,,no budget,cleanly
-D025,B2B SaaS,over 1000,RevOps manager,lost,,144,lead routing accuracy,,no decision,tidybase
-D026,B2B SaaS,over 1000,RevOps manager,won,69778,119,reporting trust,yes,,
-D027,Financial services,200-1000,VP revenue operations,won,35122,89,duplicate cleanup,yes,,
-D028,Financial services,200-1000,CRM administrator,won,47164,129,crm migration prep,yes,,
-D029,Financial services,200-1000,VP revenue operations,won,36640,118,reporting trust,yes,,
-D030,Financial services,200-1000,VP revenue operations,lost,,82,lead routing accuracy,,no decision,tidybase
-D031,Financial services,200-1000,CRM administrator,lost,,90,duplicate cleanup,,chose a competitor,none
-D032,Financial services,200-1000,CRM administrator,lost,,106,duplicate cleanup,,security review,cleanly
-D033,Financial services,200-1000,VP revenue operations,lost,,73,duplicate cleanup,,no budget,tidybase
-D034,Financial services,200-1000,CRM administrator,lost,,123,duplicate cleanup,,no decision,none
-D035,Financial services,200-1000,VP revenue operations,won,35591,88,duplicate cleanup,no,,
-D036,Financial services,200-1000,CRM administrator,lost,,68,lead routing accuracy,,no budget,none
-D037,Financial services,over 1000,CRM administrator,lost,,226,duplicate cleanup,,no budget,tidybase
-D038,Financial services,over 1000,VP revenue operations,lost,,123,duplicate cleanup,,no budget,none
-D039,Financial services,over 1000,VP revenue operations,lost,,153,reporting trust,,built in house,cleanly
-D040,Financial services,over 1000,VP revenue operations,lost,,87,reporting trust,,no decision,none
-D041,Financial services,over 1000,VP revenue operations,lost,,142,reporting trust,,no budget,datafix
-D042,Manufacturing,200-1000,Marketing operations manager,lost,,125,duplicate cleanup,,chose a competitor,none
-D043,Manufacturing,200-1000,CRM administrator,lost,,66,duplicate cleanup,,chose a competitor,cleanly
-D044,Manufacturing,200-1000,CRM administrator,lost,,93,reporting trust,,chose a competitor,tidybase
-D045,Manufacturing,200-1000,CRM administrator,lost,,44,duplicate cleanup,,no budget,none
-D046,Manufacturing,200-1000,Marketing operations manager,lost,,89,lead routing accuracy,,no budget,datafix
-D047,Manufacturing,200-1000,CRM administrator,won,12955,103,reporting trust,yes,,
-D048,Manufacturing,200-1000,CRM administrator,lost,,147,duplicate cleanup,,no budget,none
-D049,Manufacturing,200-1000,CRM administrator,lost,,111,duplicate cleanup,,no decision,tidybase
-D050,Manufacturing,200-1000,CRM administrator,lost,,125,duplicate cleanup,,no decision,cleanly
-D051,Healthcare,200-1000,Head of analytics,won,29639,139,crm migration prep,yes,,
-D052,Healthcare,200-1000,CRM administrator,won,29226,122,crm migration prep,yes,,
-D053,Healthcare,200-1000,CRM administrator,lost,,65,duplicate cleanup,,chose a competitor,none
-D054,Healthcare,200-1000,Head of analytics,lost,,127,duplicate cleanup,,no budget,none
-D055,Healthcare,200-1000,CRM administrator,won,24434,122,crm migration prep,yes,,
-D056,Healthcare,200-1000,Head of analytics,lost,,67,duplicate cleanup,,security review,tidybase
-D057,Healthcare,200-1000,Head of analytics,won,45116,168,crm migration prep,no,,
-D058,Healthcare,200-1000,Head of analytics,lost,,91,duplicate cleanup,,built in house,tidybase
-D059,Agencies,under 200,Marketing operations manager,won,4049,17,crm migration prep,no,,
-D060,Agencies,under 200,Marketing operations manager,won,5710,20,crm migration prep,yes,,
-D061,Agencies,under 200,Marketing operations manager,lost,,7,crm migration prep,,no decision,none
-D062,Agencies,under 200,RevOps manager,lost,,23,lead routing accuracy,,security review,tidybase
-D063,Agencies,under 200,RevOps manager,lost,,15,crm migration prep,,no decision,cleanly
-D064,Agencies,under 200,Marketing operations manager,lost,,19,reporting trust,,no decision,none
-D065,Agencies,under 200,Marketing operations manager,lost,,19,crm migration prep,,no budget,datafix
-D066,Education,under 200,CRM administrator,lost,,45,reporting trust,,no budget,tidybase
-D067,Education,under 200,CRM administrator,lost,,66,crm migration prep,,no budget,tidybase
-D068,Education,under 200,CRM administrator,won,7641,51,reporting trust,no,,
+D001,Retail,1000-10000,Head of Data Engineering,won,76963,77,duplicate cleanup,yes,,
+D002,Retail,1000-10000,VP of Data,won,68731,71,duplicate cleanup,no,,
+D003,Retail,1000-10000,VP of Data,lost,,106,duplicate cleanup,,chose a competitor,Clearline Data
+D004,Retail,1000-10000,VP of Data,lost,,109,duplicate cleanup,,doing it ourselves,none
+D005,Retail,1000-10000,Director of Analytics,lost,,100,duplicate cleanup,,doing it ourselves,none
+D006,Retail,1000-10000,Director of Analytics,won,68432,85,duplicate cleanup,yes,,
+D007,Retail,1000-10000,Director of Analytics,won,76440,127,reporting trust,yes,,
+D008,Retail,1000-10000,Head of Data Engineering,won,65363,95,duplicate cleanup,yes,,
+D009,Retail,1000-10000,CFO,won,75089,69,reporting trust,yes,,
+D010,Retail,1000-10000,Director of Analytics,won,62716,98,reporting trust,yes,,
+D011,Retail,1000-10000,Head of Data Engineering,won,59075,88,duplicate cleanup,no,,
+D012,Retail,1000-10000,Head of Data Engineering,lost,,84,duplicate cleanup,,doing it ourselves,none
+D013,Retail,1000-10000,BI Director,won,72355,73,data governance,yes,,
+D014,Retail,1000-10000,VP of Data,lost,,58,duplicate cleanup,,chose a competitor,Clearline Data
+D015,Financial services,1000-10000,Director of Analytics,won,70163,176,duplicate cleanup,yes,,
+D016,Financial services,1000-10000,BI Director,won,102849,78,reporting trust,yes,,
+D017,Financial services,1000-10000,VP of Data,lost,,85,reporting trust,,no budget,none
+D018,Financial services,1000-10000,Director of Analytics,won,86179,160,duplicate cleanup,yes,,
+D019,Financial services,1000-10000,Head of Data Engineering,lost,,123,data governance,,doing it ourselves,none
+D020,Financial services,1000-10000,BI Director,won,98818,125,data governance,yes,,
+D021,Financial services,1000-10000,Director of Analytics,won,93326,95,duplicate cleanup,no,,
+D022,Financial services,1000-10000,Head of Data Engineering,lost,,126,reporting trust,,doing it ourselves,none
+D023,Financial services,1000-10000,VP of Data,lost,,150,duplicate cleanup,,doing it ourselves,none
+D024,Financial services,1000-10000,Head of Data Engineering,won,92847,140,duplicate cleanup,yes,,
+D025,Financial services,1000-10000,VP of Data,lost,,135,cross-system merge,,chose a competitor,Clearline Data
+D026,Financial services,1000-10000,CFO,won,118320,67,cross-system merge,no,,
+D027,Retail,over 10000,Head of Data Engineering,won,139579,202,reporting trust,yes,,
+D028,Retail,over 10000,VP of Data,lost,,158,reporting trust,,no budget,none
+D029,Retail,over 10000,VP of Data,won,131056,215,cross-system merge,no,,
+D030,Retail,over 10000,VP of Data,lost,,206,reporting trust,,doing it ourselves,none
+D031,Retail,over 10000,VP of Data,lost,,192,reporting trust,,no decision,none
+D032,Retail,over 10000,Director of Analytics,lost,,153,reporting trust,,chose a competitor,Clearline Data
+D033,Financial services,over 10000,Director of Analytics,lost,,134,reporting trust,,doing it ourselves,none
+D034,Financial services,over 10000,Director of Analytics,lost,,227,reporting trust,,doing it ourselves,none
+D035,Financial services,over 10000,VP of Data,lost,,253,reporting trust,,chose a competitor,Clearline Data
+D036,Financial services,over 10000,Director of Analytics,won,166588,158,duplicate cleanup,yes,,
+D037,Financial services,over 10000,Head of Data Engineering,lost,,204,reporting trust,,doing it ourselves,none
+D038,Manufacturing,1000-10000,VP of Data,won,64008,137,data governance,no,,
+D039,Manufacturing,1000-10000,VP of Data,lost,,105,cross-system merge,,doing it ourselves,none
+D040,Manufacturing,1000-10000,VP of Data,lost,,105,duplicate cleanup,,doing it ourselves,none
+D041,Manufacturing,1000-10000,VP of Data,lost,,104,duplicate cleanup,,doing it ourselves,none
+D042,Manufacturing,1000-10000,VP of Data,lost,,122,reporting trust,,no budget,none
+D043,Manufacturing,1000-10000,Head of Data Engineering,lost,,105,duplicate cleanup,,chose a competitor,Clearline Data
+D044,Manufacturing,1000-10000,Director of Analytics,lost,,102,duplicate cleanup,,doing it ourselves,none
+D045,Manufacturing,1000-10000,Head of Data Engineering,lost,,151,duplicate cleanup,,doing it ourselves,none
+D046,Manufacturing,1000-10000,Director of Analytics,lost,,97,duplicate cleanup,,no budget,none
+D047,Healthcare,1000-10000,VP of Data,lost,,71,cross-system merge,,doing it ourselves,none
+D048,Healthcare,1000-10000,Director of Analytics,won,73689,92,reporting trust,yes,,
+D049,Healthcare,1000-10000,VP of Data,lost,,107,data governance,,doing it ourselves,none
+D050,Healthcare,1000-10000,Director of Analytics,lost,,118,reporting trust,,doing it ourselves,none
+D051,Healthcare,1000-10000,Director of Analytics,lost,,77,data governance,,doing it ourselves,none
+D052,Healthcare,1000-10000,CFO,won,56612,100,data governance,yes,,
+D053,Healthcare,1000-10000,Head of Data Engineering,won,76248,101,cross-system merge,no,,
+D054,Healthcare,1000-10000,VP of Data,lost,,91,reporting trust,,chose a competitor,Datavault Pro
+D055,Retail,under 1000,VP of Data,lost,,41,cross-system merge,,chose a competitor,Clearline Data
+D056,Retail,under 1000,VP of Data,lost,,32,duplicate cleanup,,doing it ourselves,none
+D057,Retail,under 1000,Director of Analytics,won,20326,49,reporting trust,yes,,
+D058,Retail,under 1000,BI Director,won,30605,38,cross-system merge,no,,
+D059,Retail,under 1000,Head of Data Engineering,lost,,42,reporting trust,,doing it ourselves,none
+D060,Retail,under 1000,Director of Analytics,lost,,41,cross-system merge,,doing it ourselves,none
+D061,Retail,under 1000,CFO,lost,,56,duplicate cleanup,,no budget,none
+D062,Technology,1000-10000,Director of Analytics,lost,,65,reporting trust,,doing it ourselves,none
+D063,Technology,1000-10000,VP of Data,lost,,76,cross-system merge,,no budget,none
+D064,Technology,1000-10000,Director of Analytics,won,58848,100,data governance,yes,,

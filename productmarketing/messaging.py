@@ -81,7 +81,7 @@ def statement_parts(ctx):
     """The positioning statement as labeled parts. The sentences are for a person to write; the evidence is filled in."""
     p = ctx["profile"]
     seg, pers = ctx["top_segment"], ctx["personas"]
-    who = f"{pers[0][0]}s at {seg['industry']} companies with {seg['size']} employees" if seg and pers else "[MISSING: ideal customer]"
+    who = f"{pers[0][0]} at {seg['industry'].lower()} companies with {seg['size']} employees" if seg and pers else "[MISSING: ideal customer]"
     pain = next((v for v in ctx["pains"].values() if v), None) or "[MISSING: their main problem, from interviews]"
     alt = ctx["lost_competitors"][0][0] if ctx["lost_competitors"] else "[MISSING: the alternative buyers choose]"
     strong = ctx["pillars"][0]["d"]["claim"] if ctx["pillars"] else "[MISSING: a differentiator with proof]"

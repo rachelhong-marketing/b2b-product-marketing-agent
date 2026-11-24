@@ -1,25 +1,33 @@
 {
   "brand": "Fernhill Software",
-  "product": "Fernhill Cleanse",
+  "product": "Fernhill Data Quality Platform",
   "note": "Starter profile exported by the product marketing agent. Review before use.",
   "domain": "fernhill.example",
   "audiences": [
-    "RevOps manager",
-    "CRM administrator",
-    "Head of analytics"
+    "Director of Analytics",
+    "Head of Data Engineering",
+    "BI Director"
   ],
-  "voice": "Plain, confident, practical. No fear-based messaging and no hype words.",
+  "voice": "Plain, confident, practical. Talk like a smart colleague, not a billboard.",
   "avoid_words": [
-    "revolutionary",
-    "game-changing",
     "best-in-class",
+    "world-class",
+    "revolutionary",
+    "game-changer",
+    "cutting-edge",
+    "seamless",
+    "synergy",
+    "leverage",
     "leading",
-    "unique",
-    "cutting-edge"
+    "fastest",
+    "guarantee"
   ],
   "known_acronyms": [
     "FAQ",
-    "AI"
+    "AI",
+    "CFO",
+    "VP",
+    "BI"
   ],
   "themes": {
     "duplicate records": {
@@ -33,7 +41,7 @@
       ]
     },
     "trusted reporting": {
-      "fit": 0.62,
+      "fit": 0.7,
       "triggers": [
         "data quality",
         "bad data",
@@ -42,34 +50,38 @@
         "single source of truth"
       ]
     },
-    "crm migration": {
-      "fit": 0.88,
+    "customer data cleanup": {
+      "fit": 0.4,
       "triggers": [
-        "crm migration",
-        "migrating crm",
-        "data migration"
+        "data cleanup",
+        "crm cleanup",
+        "clean crm",
+        "messy data",
+        "data hygiene",
+        "customer data"
       ]
     },
-    "lead routing": {
-      "fit": 0.38,
+    "data governance": {
+      "fit": 0.5,
       "triggers": [
-        "lead routing",
-        "lead assignment"
+        "data governance",
+        "master data management",
+        "data stewardship"
       ]
     }
   },
   "competitors": [
     {
-      "name": "tidybase",
-      "note": "AI-powered matching for any CRM"
+      "name": "Clearline Data",
+      "note": "Fast cleanup: one-time cleanup projects"
     },
     {
-      "name": "cleanly",
-      "note": "Clean your CRM in minutes"
+      "name": "Datavault Pro",
+      "note": "Governance and compliance"
     },
     {
-      "name": "datafix",
-      "note": "Enterprise data governance suite"
+      "name": "Purestream",
+      "note": "Real-time data pipelines"
     }
   ]
 }

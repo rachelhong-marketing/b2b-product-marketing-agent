@@ -1,29 +1,30 @@
 {
   "brand": "Fernhill Software",
-  "product": "Fernhill Cleanse",
-  "note": "Made-up example. Fernhill is a fictional company that sells software to clean up duplicate and messy customer records in a CRM (customer relationship management system).",
+  "product": "Fernhill Data Quality Platform",
+  "note": "Made-up example. Fernhill is a fictional company. Product facts and approved proof points match the sample go-to-market plan in the Campaign Assistant repo, so the toolkit tells one story.",
   "domain": "fernhill.example",
-  "category": "customer relationship management (CRM) data quality software",
-  "voice": "Plain, confident, practical. No fear-based messaging and no hype words.",
-  "avoid_words": ["revolutionary", "game-changing", "best-in-class", "leading", "unique", "cutting-edge"],
-  "known_acronyms": ["FAQ", "AI"],
+  "category": "customer data quality software that finds and merges duplicate customer records across systems",
+  "voice": "Plain, confident, practical. Talk like a smart colleague, not a billboard.",
+  "avoid_words": ["best-in-class", "world-class", "revolutionary", "game-changer", "cutting-edge", "seamless", "synergy", "leverage", "leading", "fastest", "guarantee"],
+  "known_acronyms": ["FAQ", "AI", "CFO", "VP", "BI"],
   "differentiators": [
-    {"id": "d1", "claim": "A person approves every merge in a review queue", "tags": ["human review"], "answers": ["merged wrong people by mistake"],
-     "proof": [{"id": "p1", "type": "customer result", "text": "Made-up: 0 wrong merges in 40,000 reviewed pairs at one customer", "source": "made-up case study A"},
-               {"id": "p2", "type": "benchmark", "text": "Made-up: reviewers cleared 120 near matches per hour in a pilot", "source": "made-up internal pilot"}]},
-    {"id": "d2", "claim": "Matching rules a RevOps manager can edit without code", "tags": ["no code"], "answers": ["depend on engineers to change matching rules"],
-     "proof": [{"id": "p3", "type": "customer result", "text": "Made-up: a rule change went live in one afternoon at one customer", "source": "made-up case study B"},
-               {"id": "p4", "type": "third party", "text": "Made-up: rated 4.6 of 5 for ease of setup in a review site", "source": "made-up review site"}]},
-    {"id": "d3", "claim": "Live in days, not a quarter", "tags": ["fast setup"], "answers": ["long implementation"],
-     "proof": [{"id": "p5", "type": "customer result", "text": "Made-up: median 6 days from contract to first merge across 20 customers", "source": "made-up onboarding data"}]},
-    {"id": "d4", "claim": "Keeps records clean after the first cleanup", "tags": ["ongoing monitoring"], "answers": ["duplicates come back after cleanup"], "proof": []},
-    {"id": "d5", "claim": "Uses AI to match records", "tags": ["ai matching"], "answers": ["reports do not match between teams"],
-     "proof": [{"id": "p6", "type": "benchmark", "text": "Made-up: 94 percent of exact twins found in a test set", "source": "made-up internal test"}]}
+    {"id": "d1", "claim": "Keep them out: monitoring so duplicate records don't come back", "tags": ["ongoing monitoring"], "answers": ["duplicates come back after cleanup"],
+     "proof": [{"id": "p1", "type": "customer survey", "text": "Teams spend 30% of their week fixing data", "source": "2025 customer survey, n=120"},
+               {"id": "p2", "type": "customer survey", "text": "Customers cut data cleanup time by 40%", "source": "2025 customer survey, n=120"}]},
+    {"id": "d2", "claim": "Merge them: one record per customer, without breaking reports", "tags": ["safe merge"], "answers": ["merging will break reports", "which record is the right one"],
+     "proof": [{"id": "p2", "type": "customer survey", "text": "Customers cut data cleanup time by 40%", "source": "2025 customer survey, n=120"},
+               {"id": "p4", "type": "customer result", "text": "Made-up: a regional bank merged its customer records and month-end reports did not change", "source": "made-up customer webinar"}]},
+    {"id": "d3", "claim": "Find them: see how many duplicate records you have across systems", "tags": ["duplicate count"], "answers": ["reports do not match"],
+     "proof": [{"id": "p5", "type": "benchmark", "text": "Made-up: duplicate count shown within one day of connecting a system", "source": "made-up implementation note"},
+               {"id": "p6", "type": "benchmark", "text": "Made-up: the first scan found duplicates in all 20 pilot accounts", "source": "made-up pilot summary"}]},
+    {"id": "d4", "claim": "Set up in under two weeks", "tags": ["fast setup"], "answers": [],
+     "proof": [{"id": "p3", "type": "implementation records", "text": "Setup in under two weeks", "source": "Implementation records, 2025 median"}]},
+    {"id": "d5", "claim": "Works across customer relationship management (CRM), billing and support systems", "tags": ["cross-system"], "answers": [], "proof": []}
   ],
   "topics": [
     {"theme": "duplicate records", "use_case": "duplicate cleanup", "triggers": ["duplicate records", "duplicate contacts", "duplicates", "dedupe", "deduplication"]},
     {"theme": "trusted reporting", "use_case": "reporting trust", "triggers": ["data quality", "bad data", "reporting accuracy", "trusted data", "single source of truth"]},
-    {"theme": "crm migration", "use_case": "crm migration prep", "triggers": ["crm migration", "migrating crm", "data migration"]},
-    {"theme": "lead routing", "use_case": "lead routing accuracy", "triggers": ["lead routing", "lead assignment"]}
+    {"theme": "customer data cleanup", "use_case": "cross-system merge", "triggers": ["data cleanup", "crm cleanup", "clean crm", "messy data", "data hygiene", "customer data"]},
+    {"theme": "data governance", "use_case": "data governance", "triggers": ["data governance", "master data management", "data stewardship"]}
   ]
 }

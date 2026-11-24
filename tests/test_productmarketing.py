@@ -51,15 +51,17 @@ class Messaging(unittest.TestCase):
     def test_claim_without_proof_cannot_be_a_pillar(self):
         c = self.ctx()
         claims = [x["d"]["claim"] for x in c["pillars"]]
-        self.assertNotIn("Keeps records clean after the first cleanup", claims)
-        self.assertIn("Keeps records clean after the first cleanup", [x["d"]["claim"] for x in c["no_proof"]])
+        nop = "Works across customer relationship management (CRM), billing and support systems"
+        self.assertNotIn(nop, claims)
+        self.assertIn(nop, [x["d"]["claim"] for x in c["no_proof"]])
+        self.assertEqual(len(claims), 3)
 
     def test_shared_claims_are_flagged_and_rank_lower(self):
         c = self.ctx()
         by = {x["d"]["id"]: x for x in c["ranked"]}
         self.assertEqual(by["d1"]["overlap"], [])
-        self.assertEqual(sorted(by["d5"]["overlap"]), ["cleanly", "tidybase"])
-        self.assertGreater(by["d1"]["score"], by["d5"]["score"])
+        self.assertEqual(sorted(by["d4"]["overlap"]), ["Clearline Data", "Purestream"])
+        self.assertGreater(by["d1"]["score"], by["d4"]["score"])
 
     def test_output_is_deterministic_and_has_open_slots(self):
         a, b = messaging.render(self.ctx()), messaging.render(self.ctx())
@@ -93,7 +95,7 @@ class Export(unittest.TestCase):
         for name, t in b["themes"].items():
             self.assertTrue(t["triggers"], name)
             self.assertTrue(0 <= t["fit"] <= 1)
-        self.assertEqual(b["themes"]["duplicate records"]["fit"], 1.0)
+        self.assertEqual(max(t["fit"] for t in b["themes"].values()), 1.0)
 
     def test_brand_profile_loads_in_the_content_strategy_assistant_if_present(self):
         other = ROOT.parent / "b2b-content-strategy-assistant"
@@ -130,13 +132,12 @@ class Check(unittest.TestCase):
         res = check.check_doc(self.built(), self.PROFILE)
         msgs = " ".join(m for _, m in res)
         self.assertIn("[MISSING] slots", msgs)
-        self.assertIn("proof point(s)", msgs)
 
     def test_finished_doc_passes(self):
         t = self.built()
-        t = t.replace("[MISSING: write it. Strongest pillar: A person approves every merge in a review queue]", "Teams merge with confidence because a person approves every merge.")
-        t = t.replace("[MISSING: write it. Claim nobody tracked makes: A person approves every merge in a review queue]", "Every merge is approved by a person before it happens.")
-        t = t.replace("- [MISSING] only 1 proof point; add at least 2 before using this in a campaign.\n", "- Proof (benchmark, source: made-up second test): Made-up: second proof point\n")
+        claim = "Keep them out: monitoring so duplicate records don't come back"
+        t = t.replace(f"[MISSING: write it. Strongest pillar: {claim}]", "Duplicate records stay out because the platform keeps watching.")
+        t = t.replace(f"[MISSING: write it. Claim nobody tracked makes: {claim}]", "It keeps monitoring data quality after setup.")
         t = t.replace("Response: [MISSING: from sales and win-loss calls]", "Response: covered in the sales playbook")
         self.assertNotIn("[MISSING", t)
         self.assertEqual(check.check_doc(t, self.PROFILE), [])

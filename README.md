@@ -47,21 +47,21 @@ See [docs/data-guide.md](docs/data-guide.md) for columns and how to export. Shor
 
 ## Example output
 
-From the sample data (full file: [docs/example-positioning-and-messaging.md](docs/example-positioning-and-messaging.md)):
+From the sample data (full file: [docs/example-positioning-and-messaging.md](docs/example-positioning-and-messaging.md)). The sample is the same fictional company, product, buyers and competitors as the [Campaign Assistant](https://github.com/rachelhong-marketing/b2b-campaign-assistant), so the toolkit tells one story. The deal and interview data are made up, and the results were built into them.
 
 | Segment | Closed deals | Win rate | Average contract value | Days to close | 12-month retention | Score |
 |---|---|---|---|---|---|---|
-| B2B SaaS, 200-1000 employees | 12 | 50% | $21,813 | 61 | 100% | 61.5 |
-| Financial services, 200-1000 employees | 10 | 40% | $38,629 | 106 | 75% | 60.0 |
-| B2B SaaS, under 200 employees | 8 | 38% | $11,304 | 31 | 100% | 53.1 |
+| Financial services, 1000-10000 employees | 12 | 58% | $94,643 | 120 | 71% | 59.7 |
+| Retail, 1000-10000 employees | 14 | 64% | $69,463 | 87 | 78% | 58.6 |
+| Healthcare, 1000-10000 employees | 8 | 38% | $68,850 | 98 | 67% | 40.0 |
 
 ```
-### Pillar 1: A person approves every merge in a review queue
+### Pillar 1: Keep them out: monitoring so duplicate records don't come back
 
-- Score 82.5. No tracked competitor makes this claim.
-- Pain it answers: merged wrong people by mistake. Mentioned in 2 of 12 interviews.
-- Proof (customer result, source: made-up case study A): Made-up: 0 wrong merges in 40,000 reviewed pairs at one customer
-- Proof (benchmark, source: made-up internal pilot): Made-up: reviewers cleared 120 near matches per hour in a pilot
+- Score 100.0. No tracked competitor makes this claim.
+- Pain it answers: duplicates come back after cleanup. Mentioned in 11 of 30 interviews.
+- Proof (customer survey, source: 2025 customer survey, n=120): Teams spend 30% of their week fixing data
+- Proof (customer survey, source: 2025 customer survey, n=120): Customers cut data cleanup time by 40%
 ```
 
 ## Hand-off to the next steps
