@@ -14,6 +14,7 @@ Step 1 of the B2B Campaign Lifecycle Toolkit. It comes before the campaign assis
 - Never present a target-list pattern as proof of buyer fit. The list reflects how it was built.
 - Never write what a competitor is good at, how to handle them, a customer quote or an objection response. Those come from people who talk to buyers.
 - Never record a launch decision for the product marketer.
+- Never write findings, quotes or results that were not given to you. Never decide the brand voice.
 
 ## Steps
 
@@ -30,6 +31,9 @@ Step 1 of the B2B Campaign Lifecycle Toolkit. It comes before the campaign assis
    - Fill the slots only with evidence the user gave you. Battlecard strengths and how to handle a competitor come from sales: ask, do not write them.
    - A one-sheet is external. Keep interview counts and internal research out of its body. Use only proof points that are usable today.
    - Launch triage is a suggestion. Ask the product marketer to answer the open questions and decide the path. Record it with `decide-launch` only when they state the decision and their name.
+   - **Research plan:** `research` lists where the evidence is thin and drafts neutral interview questions and an eight-question survey. Help the user pick who to talk to. Do not run interviews or send surveys. When they bring back notes, add rows to `customers/interviews.csv` with the existing pain wording, and send proof points through their approval. Never write findings or quotes.
+   - **Post-launch review:** `reviews` compares goals with results. Ask for missing results and goals. Say a result is not proof the launch caused it. The lessons and the continue, adjust or stop decision belong to the product marketer.
+   - **Brand voice:** `voice` describes patterns in approved copy. Offer the patterns as options. Ask the user which are the voice and for the before-and-after examples. Run `voice-check` on new drafts.
    - Run `python3 -m productmarketing check-asset <file> --data <folder> --as-of <today>` on every finished document and fix every FAIL.
 8. **Hand off.** `positioning.json` goes to the campaign assistant. `brand-profile.json` is the starter brand profile for the content strategy assistant. If the ICP is still a DRAFT, tell the user the hand-off files say so and what is needed to confirm it.
 9. Show the whole updated document after any change, not only the changed part.

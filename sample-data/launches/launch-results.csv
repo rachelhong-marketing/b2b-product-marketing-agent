@@ -1,0 +1,5 @@
+launch_id,goal_metric,goal_value,actual_value,direction,measured_on,source,notes
+L0,Demo requests in the first 90 days,120,95,higher,2026-06-20,made-up marketing report,made-up
+L0,Pipeline sourced (dollars),400000,520000,higher,2026-09-10,made-up CRM report,made-up
+L0,Customers using the preview after 90 days (percent),30,18,higher,2026-06-20,made-up product analytics,made-up
+L0,Support tickets about merges per month,40,52,lower,2026-09-10,made-up support report,made-up

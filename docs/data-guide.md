@@ -30,6 +30,14 @@ A target list reflects the filters used to build it. The document shows what the
 
 `launch_id, name, requested_by, target_date, claims, customers_impacted, customer_ask, value_to_prospects, differentiation, revenue_impact, usage_impact, roadmap_fit, notes`. Answers use few, some, many (customers_impacted); small, medium, large (customer_ask); low, medium, high (the next four); and no, partly, yes (roadmap_fit). `claims` is a list of differentiator ids separated by semicolons, so the plan can check their proof. `target_date` is YYYY-MM-DD and sets the 180-day review date. Leave an answer blank if it is unknown. Fewer than 5 answers means the result is undetermined.
 
+## `launches/launch-results.csv` (goals and results for launches that have run)
+
+`launch_id, goal_metric, goal_value, actual_value, direction, measured_on, source, notes`. One row per goal. `direction` is higher (more is better, the default) or lower. Give the source of every result. A result is what was measured, not proof the launch caused it. The review counts a goal as met at 100% or more of target, partly met from 50%, and missed below that (for "lower is better" goals: met at or under target, partly met up to 1.5 times the target).
+
+## `company/approved-copy/` and `company/terminology.csv` (for the brand voice guide)
+
+Put copy that is already approved and published in `approved-copy/` as `.md` or `.txt` files, one piece each. Under 1,000 words the guide labels the sample thin. `terminology.csv` has `use, dont_use, note`. Mark made-up copy as made-up.
+
 ## `customers/interviews.csv` (from your own interview notes)
 
 `interview_id, source, role, industry, pain, trigger, current_alternative, quote`. One row per interview or customer call. Keep the pain short and in the customer's words. Use the same pain wording across rows so they can be counted. Only use quotes people agreed to share.

@@ -5,7 +5,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from . import battlecards, check as checkmod, decisions as decmod, export, fieldguides, launches, messaging, onesheets, playbook, proofs as proofmod
+from . import battlecards, check as checkmod, decisions as decmod, export, fieldguides, launches, messaging, onesheets, playbook, proofs as proofmod, research, reviews, voice
 from .util import slug
 
 
@@ -30,7 +30,15 @@ def write_assets(ctx, out, data, only=None):
             put(f"one-sheets/{slug(pr['name'])}.md", onesheets.build(ctx, pr))
     if want("playbook"):
         put("playbook-outline.md", playbook.build(ctx))
+    if want("research"):
+        put("research/interview-guide.md", research.guide(ctx))
+        put("research/survey.md", research.survey(ctx))
+    copy = voice.load_copy(data)
+    if want("voice") and (copy or only is not None):
+        put("voice-guide.md", voice.build(ctx, copy, voice.load_terms(data)))
     rows = launches.load(data)
+    if rows and want("reviews"):
+        put("launch-reviews.md", reviews.render(ctx, rows, reviews.load(data), launches.load_decisions(data)))
     if rows and want("launches"):
         put("launch-triage.md", launches.render(ctx, rows, launches.load_decisions(data)))
     return written
@@ -70,11 +78,16 @@ def main(argv=None):
     pr.add_argument("--data", required=True)
     pr.add_argument("--as-of")
     for nm, hlp in (("battlecards", "one internal page per competitor"), ("fieldguides", "one page per buyer persona"), ("onesheets", "one-sheet drafts per persona"),
-                    ("playbook", "sales playbook outline"), ("launches", "launch triage and plan skeletons")):
+                    ("playbook", "sales playbook outline"), ("launches", "launch triage and plan skeletons"),
+                    ("research", "interview guide and survey question set, from the gaps in the evidence"), ("reviews", "post-launch review: goals against results"),
+                    ("voice", "brand voice guide drafted from approved copy")):
         x = sub.add_parser(nm, help=hlp)
         x.add_argument("--data", required=True)
         x.add_argument("--out-dir", default="output")
         x.add_argument("--as-of")
+    vc = sub.add_parser("voice-check", help="compare a draft with the voice guide: avoid words, terminology, style drift")
+    vc.add_argument("file")
+    vc.add_argument("--data", required=True)
     ca = sub.add_parser("check-asset", help="check a battlecard, field guide, one-sheet or playbook")
     ca.add_argument("file")
     ca.add_argument("--data", required=True)
@@ -99,7 +112,12 @@ def main(argv=None):
         res = checkmod.check_doc(Path(a.doc).read_text(encoding="utf-8"), messaging.load_profile(a.profile))
         print(checkmod.format_results(res))
         return 1 if any(l == "FAIL" for l, _ in res) else 0
-    elif a.cmd in ("battlecards", "fieldguides", "onesheets", "playbook", "launches"):
+    elif a.cmd == "voice-check":
+        ctx = messaging.analyze(a.data, date.today())
+        res = voice.check(Path(a.file).read_text(encoding="utf-8"), ctx, voice.load_terms(a.data), voice.load_copy(a.data))
+        print(checkmod.format_results(res))
+        return 1 if any(l == "FAIL" for l, _ in res) else 0
+    elif a.cmd in ("battlecards", "fieldguides", "onesheets", "playbook", "launches", "research", "reviews", "voice"):
         ctx = messaging.analyze(a.data, _date(a.as_of))
         ctx["statement_parts"] = messaging.statement_parts(ctx)
         for rel in write_assets(ctx, a.out_dir, a.data, only={a.cmd}):
