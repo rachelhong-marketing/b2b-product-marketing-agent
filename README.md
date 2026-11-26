@@ -18,6 +18,43 @@ The results go to the [Campaign Assistant](https://github.com/rachelhong-marketi
 
 All data here is made up. Fernhill Software is a fictional company. It sells the Fernhill Data Quality Platform, which finds and merges duplicate customer records across systems. The same company, product, buyers and competitors appear across the toolkit.
 
+## What you give it, and what you get back
+
+### What you give it
+
+Export these from your own systems as CSV files (names removed) and put them in one data folder. [docs/data-guide.md](docs/data-guide.md) shows the columns and how to export each one. The first four are the minimum.
+
+| You provide | What it is | Where it usually comes from |
+|---|---|---|
+| Closed deals | Won and lost deals: segment, size, deal value, days to close, reason lost, still a customer after 12 months | Your CRM |
+| Target account list | The accounts sales and marketing are going after | Your CRM or ABM tool |
+| Sales notes | Short notes from sales about why deals were won or lost | Sales team |
+| Customer interviews | Notes from customer and prospect calls: who they are, their pain, what they asked | Interview notes, call recordings |
+| Competitor claims | What competitors say publicly about themselves | Their websites |
+| Proof points | Each claim you want to make, its source, who approved it, and when it expires | Product marketer |
+| Product profile | Your differentiators, buyer types, topics and words to avoid | Product marketer |
+| Launch requests and results (optional) | Planned launches with seven yes/no answers, and goals vs. actual for past launches | Product marketer |
+| Approved copy and word list (optional) | Published copy you're happy with, and words to use and avoid | Brand and content team |
+
+### What you get back
+
+| Output | What it looks like | Example |
+|---|---|---|
+| Customer fit ranking | Which customer types win, keep and pay best, and which the target list is missing | [Positioning and messaging](docs/example-positioning-and-messaging.md) |
+| Positioning and messaging draft | Positioning statement parts and messaging pillars, each with its evidence | [Positioning and messaging](docs/example-positioning-and-messaging.md) |
+| Proof point list | Which claims you can use today, which are about to expire and which can't be used | [Positioning and messaging](docs/example-positioning-and-messaging.md) |
+| Persona field guides | For each buyer type: their pains, triggers, objections and what to lead with | [Field guide](docs/examples/field-guide-analytics-leader.md) |
+| Battlecards | One page per competitor, for sales, from public information | [Battlecard](docs/examples/battlecard-clearline-data.md) |
+| One-sheets | A customer-facing page using only approved, in-date proof | [One-sheet](docs/examples/one-sheet-data-leader.md) |
+| Launch triage | A market launch, sales launch or no launch suggestion, with the points behind it | [Launch triage](docs/examples/launch-triage.md) |
+| Sales playbook outline | The confirmed customer, buyers, messages and objections, ready for sales to fill in | [Playbook](docs/examples/playbook-outline.md) |
+| Interview guide and survey | Questions that fill the gaps in your evidence | [Interview guide](docs/examples/interview-guide.md) and [survey](docs/examples/survey.md) |
+| Post-launch review | Goals vs. actual results, with the lessons left for a person | [Launch review](docs/examples/launch-reviews.md) |
+| Brand voice guide | Patterns found in your approved copy, and a check for new drafts | [Voice guide](docs/examples/voice-guide.md) |
+| Files for steps 2 and 3 | `positioning.json` and `brand-profile.json`, which the next tools read | [Hand-off](#hand-off-to-the-next-steps) |
+
+Everything is a draft. The product marketer decides the customer, approves each claim and writes the final words.
+
 ## Why this exists
 
 Campaigns fail upstream. If the team has not agreed on who the buyer is and what is true about the product, the theme, the content and the ads all inherit the guesswork. This tool puts the evidence on the table first: which segments you actually win and keep, what the target list and the sales team say, what buyers say hurts, what competitors already claim, and which of your claims you can prove today.
