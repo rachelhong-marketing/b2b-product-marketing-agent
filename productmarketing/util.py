@@ -27,3 +27,8 @@ def minmax(values):
         return lambda v: 0.5
     lo, hi = min(vals), max(vals)
     return lambda v: (v - lo) / (hi - lo)
+
+
+def slug(text, n=60):
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
+    return s if len(s) <= n else s[:n].rsplit("-", 1)[0]

@@ -50,3 +50,35 @@ def check_doc(text, profile):
 
 def format_results(res):
     return "\n".join(f"{l}: {m}" for l, m in res) if res else "Document OK"
+
+
+def check_asset(text, profile, proofs_index):
+    """Check a battlecard, field guide, one-sheet or playbook: no unfinished slots, only usable proof, no avoid words, no internal terms in a one-sheet."""
+    res = []
+    f = lambda m: res.append(("FAIL", m))
+    body = text.split("## Writer's notes")[0]
+    for word in profile["avoid_words"]:
+        if has_phrase(body, word):
+            f(f"the word '{word}' is on your avoid list")
+    open_slots = len(re.findall(r"\[MISSING", body))
+    if open_slots:
+        f(f"{open_slots} [MISSING] slots are still open")
+    for pid in sorted(set(re.findall(r"\[(p\d+)\]", text))):
+        p = proofs_index.get(pid)
+        if not p:
+            f(f"proof point {pid} is not in the register")
+        elif p["state"] != "valid":
+            f(f"proof point {pid} is not usable ({p['reason']})")
+    if "## Writer's notes" in text and re.search(r"(?i)\binterviews?\b|win/loss|lost deals?", body):
+        f("the external body mentions internal research (interviews, win/loss); keep that in the writer's notes")
+    known = set(profile.get("known_acronyms", [])) | {"DRAFT"}
+    seen = set()
+    for m in re.finditer(r"\b[A-Z]{2,6}\b", body):
+        a = m.group(0)
+        if a in known or a in seen:
+            continue
+        seen.add(a)
+        before, after = body[max(0, m.start() - 1):m.start()], body[m.end():m.end() + 2]
+        if not ((before == "(" and after.startswith(")")) or after == " ("):
+            f(f"acronym '{a}' is not spelled out on first use")
+    return res

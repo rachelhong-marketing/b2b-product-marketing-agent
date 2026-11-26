@@ -1,0 +1,5 @@
+launch_id,name,requested_by,target_date,claims,customers_impacted,customer_ask,value_to_prospects,differentiation,revenue_impact,usage_impact,roadmap_fit,notes
+L1,Made-up: cross-system duplicate scan,Product management,2027-02-15,d3;d1,many,large,high,high,high,medium,yes,made-up request
+L2,Made-up: review queue for merges v2,Product management,2027-01-20,d2,some,medium,medium,medium,medium,high,yes,made-up request
+L3,Made-up: connector for a data warehouse,Partnerships,2027-03-31,d5,few,small,medium,low,low,low,partly,made-up request
+L4,Made-up: monitoring dashboard,Customer success,2027-04-30,d1,some,,medium,high,,medium,yes,made-up request; two answers still open

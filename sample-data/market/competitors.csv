@@ -1,4 +1,4 @@
-name,claim,claim_tags,price_tier,source_url
-Clearline Data,"Fast cleanup: one-time cleanup projects","fast cleanup;fast setup",mid,https://clearline.example/product
-Datavault Pro,"Governance and compliance","governance;audit trail",high,https://datavault.example/platform
-Purestream,"Real-time data pipelines","real-time pipelines;fast setup",mid,https://purestream.example/product
+name,claim,claim_tags,price_tier,source_url,strengths
+Clearline Data,"Fast cleanup: one-time cleanup projects","fast cleanup;fast setup",mid,https://clearline.example/product,"Made-up: quick to start for a one-time cleanup, per its public product page"
+Datavault Pro,"Governance and compliance","governance;audit trail",high,https://datavault.example/platform,
+Purestream,"Real-time data pipelines","real-time pipelines;fast setup",mid,https://purestream.example/product,
