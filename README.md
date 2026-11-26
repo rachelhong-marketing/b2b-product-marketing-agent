@@ -4,7 +4,17 @@
 >
 > **1. Position** → [2. Plan](https://github.com/rachelhong-marketing/b2b-campaign-assistant) → [3. Content](https://github.com/rachelhong-marketing/b2b-content-strategy-assistant) → [4. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [5. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → [6. Report](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) → [7. Prove](https://github.com/rachelhong-marketing/b2b-pipeline-attribution-tool)
 
-An assistant for the product marketer, for the work that comes before any campaign: who you sell to, what you say, and why anyone should believe it. It drafts and checks. **The product marketer decides.** It reads your closed deals, target account list, sales notes, customer interviews, competitor list and approved proof points, then produces ideal customer profile (ICP) hypotheses, persona field guides, a positioning statement draft and messaging pillars, with the evidence next to every claim. It hands those to the Campaign Assistant (step 2) and the Content Strategy Assistant (step 3). It runs as a Claude Code skill and agent, with a small Python tool (standard library only) that does the counting and the checking.
+A helper for the product marketer. It does the reading and drafting that comes before any campaign, so the product marketer can spend their time on the decisions.
+
+**In plain terms, it answers three questions:**
+
+1. **Who should we sell to?** It reads your past deals, sales notes and customer interviews, then suggests which kinds of customers are the best fit. This is the ideal customer profile (ICP).
+2. **What should we say?** It drafts the main messages for each type of buyer, and shows what customers actually said that supports them.
+3. **What can we prove?** It keeps a list of claims you can back up, who approved each one, and when it expires. If a claim has no approved proof, it won't be used.
+
+**The product marketer decides.** The agent never picks the customer, never approves a claim and never writes the final positioning. Everything it drafts is marked DRAFT until a person confirms it.
+
+The results go to the [Campaign Assistant](https://github.com/rachelhong-marketing/b2b-campaign-assistant) (step 2) and the [Content Strategy Assistant](https://github.com/rachelhong-marketing/b2b-content-strategy-assistant) (step 3). It works as a Claude Code skill (you ask for it) or an agent (it runs on its own), and there is a Copilot version too. A small Python tool does the counting and checking.
 
 All data here is made up. Fernhill Software is a fictional company. It sells the Fernhill Data Quality Platform, which finds and merges duplicate customer records across systems. The same company, product, buyers and competitors appear across the toolkit.
 
@@ -101,31 +111,49 @@ See [docs/data-guide.md](docs/data-guide.md) for columns and how to export each 
 
 ## Example output
 
-From the sample data (full file: [docs/example-positioning-and-messaging.md](docs/example-positioning-and-messaging.md)). The sample is the same fictional company, product, buyers and competitors as the [Campaign Assistant](https://github.com/rachelhong-marketing/b2b-campaign-assistant). The data is made up, and the results were built into it.
+All data here is made up (the same fictional company as the [Campaign Assistant](https://github.com/rachelhong-marketing/b2b-campaign-assistant)). The full file is [docs/example-positioning-and-messaging.md](docs/example-positioning-and-messaging.md).
 
-| Segment | Closed deals | Win rate | Average contract value | Days to close | 12-month retention | Score | On target list | Product marketer decision | Note |
-|---|---|---|---|---|---|---|---|---|---|
-| Financial services, 1000-10000 employees | 12 | 58% | $94,643 | 120 | 71% | 59.7 | 19 | confirmed (Sample Product Marketer, 2026-11-10) |  |
-| Retail, 1000-10000 employees | 14 | 64% | $69,463 | 87 | 78% | 58.6 | 22 | confirmed (Sample Product Marketer, 2026-11-10) |  |
-| Healthcare, 1000-10000 employees | 8 | 38% | $68,850 | 98 | 67% | 40.0 | 1 | needs decision |  |
+### The short version
 
-### Target list compared with wins
+Here is what the agent tells the product marketer from the sample data:
 
-- On the list, no wins: Insurance, 1000-10000 (6 accounts, 0 closed deals). Ask why before spending on it.
-- Winning where the list barely looks: Healthcare, 1000-10000 (3 wins, 1 on the list).
+- **Best fit so far:** retail and financial services companies with 1,000 to 10,000 employees. Retail wins 64% of its deals and keeps 78% of its customers a year later. Financial services wins 58% and has the biggest deals, about $95,000.
+- **Not sure yet:** healthcare. It wins 38% of its deals, but sales has barely targeted it, so there isn't enough to say. The agent marks it "needs decision" for the product marketer.
+- **Your target list doesn't match your wins.** Insurance is on the list (6 accounts) but you've never won a deal there. Healthcare has 3 wins but only 1 account on the list. Ask why before spending money on either.
+- **Three claims are ready to use, and two are about to expire.** "Setup in under two weeks" and "Customers cut data cleanup time by 40%" are approved but expire on 2026-12-31. One claim expired in September, and one was never approved, so neither can be used in a campaign.
 
+The product marketer reads this, agrees or disagrees, and records the decision. The tables below are the evidence behind it.
 
-Proof-point register (as of 2026-11-24):
+### Evidence 1: which customers win
 
-| Ref | Proof | Type | Source | Approved by | Status | Used by |
-|---|---|---|---|---|---|---|
-| p1 | Teams spend 30% of their week fixing data | customer survey | 2025 customer survey, n=120 | Sample Product Marketer | usable: expires soon (2026-12-31) | Keep them out |
-| p2 | Customers cut data cleanup time by 40% | customer survey | 2025 customer survey, n=120 | Sample Product Marketer | usable: expires soon (2026-12-31) | Keep them out, Merge them |
-| p3 | Setup in under two weeks | implementation records | Implementation records, 2025 median | Sample Product Marketer | usable: expires soon (2026-12-31) | Set up in under two weeks |
-| p4 | Made-up: a regional bank merged its customer records and month-end reports did not change | customer result | made-up customer webinar | Sample Product Marketer | usable: valid until 2027-06-30 | Merge them |
-| p5 | Made-up: duplicate count shown within one day of connecting a system | benchmark | made-up implementation note | Sample Product Marketer | usable: valid until 2027-05-01 | Find them |
-| p6 | Made-up: the first scan found duplicates in all 20 pilot accounts | benchmark | made-up pilot summary | Sample Product Marketer | Not usable: expired 2026-09-30 | Find them |
-| p7 | Made-up: a retailer cut duplicate customer records by half in one quarter | customer result | made-up customer story | not approved | Not usable: not approved | none yet |
+How to read it: each row is a type of customer. A higher score means a better fit, based on how often you win, deal size, how fast deals close and how many customers stay.
+
+| Customer type | Deals closed | Won | Average deal | Days to close | Still a customer after 12 months | Fit score | Accounts on target list | Decision |
+|---|---|---|---|---|---|---|---|---|
+| Financial services, 1,000 to 10,000 employees | 12 | 58% | $94,643 | 120 | 71% | 59.7 | 19 | confirmed |
+| Retail, 1,000 to 10,000 employees | 14 | 64% | $69,463 | 87 | 78% | 58.6 | 22 | confirmed |
+| Healthcare, 1,000 to 10,000 employees | 8 | 38% | $68,850 | 98 | 67% | 40.0 | 1 | needs decision |
+
+### Evidence 2: do the target list and the wins match?
+
+- On the list, no wins: Insurance, 1,000 to 10,000 employees (6 accounts, 0 closed deals). Ask why before spending on it.
+- Winning where the list barely looks: Healthcare, 1,000 to 10,000 employees (3 wins, 1 account on the list).
+
+### Evidence 3: which claims you can use
+
+How to read it: "usable" means the claim has a source, someone approved it, and it hasn't expired. Anything else stays out of campaigns.
+
+| Claim | Where it comes from | Can you use it? |
+|---|---|---|
+| Teams spend 30% of their week fixing data | 2025 customer survey of 120 people | Yes, until 2026-12-31 (expires soon) |
+| Customers cut data cleanup time by 40% | 2025 customer survey of 120 people | Yes, until 2026-12-31 (expires soon) |
+| Setup in under two weeks | 2025 implementation records | Yes, until 2026-12-31 (expires soon) |
+| Made-up: a regional bank merged its customer records and month-end reports did not change | customer webinar | Yes, until 2027-06-30 |
+| Made-up: duplicate count shown within one day of connecting a system | implementation note | Yes, until 2027-05-01 |
+| Made-up: the first scan found duplicates in all 20 pilot accounts | pilot summary | No, expired 2026-09-30 |
+| Made-up: a retailer cut duplicate customer records by half in one quarter | customer story | No, never approved |
+
+The full document also shows who approved each claim and which message it supports.
 
 ## Hand-off to the next steps
 
