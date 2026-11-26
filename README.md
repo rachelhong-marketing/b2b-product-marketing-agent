@@ -25,6 +25,20 @@ It does not replace the product marketer. The ideal customer profile, the final 
 | Competitors | Flags claims competitors also make so you do not lead with them | Chooses what to claim |
 | Objections | Lists them from lost deals | Supplies the responses with sales |
 
+## What it produces
+
+| Output | Command | Built from | A person adds |
+|---|---|---|---|
+| Positioning and messaging document, with ICP hypotheses | `build` | Deals, target accounts, sales notes, interviews, competitors, proof register | The ICP decision, the positioning sentences, approvals |
+| Persona field guides | `fieldguides` | Interviews, deals, pillars, usable proof | The message for each persona, first-call questions |
+| One-sheet drafts (external) | `onesheets` | Approved pillars and usable proof only | Headline, problem, customer quote, call to action |
+| Battlecards (internal) | `battlecards` | Public competitor claims, your deals and sales notes | Strengths, how to handle them, from sales |
+| Launch triage and plan skeletons | `launches` | Seven answers per launch request, linked claims | The answers, the market or sales launch decision, measurement goals |
+| Sales playbook outline | `playbook` | The confirmed ICP, personas, pillars, objections | The talk tracks, handoff rules |
+| Asset check | `check-asset` | The proof register and your avoid list | Fixes |
+
+In terms of what a product marketing team does: it supports **positioning** (personas, differentiation, field guides, one-sheets), **market intelligence** (win and loss counts, gaps, battlecards) and **launches** (triage and plan skeletons), and it drafts the skeleton for **enablement** (the playbook outline). It does not make decks, training courses, demos, email nurtures or customer surveys. Examples of each output are in `docs/examples/`.
+
 ## What it does
 
 ```
@@ -44,6 +58,13 @@ python3 -m productmarketing build --data sample-data --out-dir output --as-of 20
 python3 -m productmarketing check output/positioning-and-messaging.md --profile sample-data/company/product-profile.json
 python3 -m productmarketing icp --data sample-data
 python3 -m productmarketing proofs --data sample-data --as-of 2026-11-24
+python3 -m productmarketing battlecards --data sample-data --out-dir output --as-of 2026-11-24
+python3 -m productmarketing fieldguides --data sample-data --out-dir output --as-of 2026-11-24
+python3 -m productmarketing onesheets --data sample-data --out-dir output --as-of 2026-11-24
+python3 -m productmarketing launches --data sample-data --out-dir output --as-of 2026-11-24
+python3 -m productmarketing playbook --data sample-data --out-dir output --as-of 2026-11-24
+python3 -m productmarketing check-asset output/one-sheets/data-leader.md --data sample-data --as-of 2026-11-24
+python3 -m productmarketing decide-launch --data my-data --launch L1 --decision market --by "Your Name"
 python3 -m productmarketing decide --data my-data --segment "Retail, 1000-10000" --decision confirmed --by "Your Name"
 python3 -m unittest discover -s tests
 ```
@@ -63,7 +84,9 @@ See [docs/data-guide.md](docs/data-guide.md) for columns and how to export each 
 | `market/competitors.csv` | Public competitor claims |
 | `company/product-profile.json` | Differentiators, personas, content topics, words to avoid |
 | `company/proof-points.csv` | The proof-point register |
-| `decisions/icp-decisions.csv` | The product marketer's decisions (written by `decide`) |
+| `launches/launch-requests.csv` | Launch requests with the seven triage answers and the claims each rests on |
+| `decisions/icp-decisions.csv` | The product marketer's ICP decisions (written by `decide`) |
+| `decisions/launch-decisions.csv` | The product marketer's launch decisions (written by `decide-launch`) |
 
 ## Example output
 
@@ -115,6 +138,9 @@ If the ICP is still a DRAFT, the exported files say so. A test loads the exporte
 - **The product marketer decides.** The agent never records an ICP decision, never approves a proof point and never signs off a claim. `decide` refuses an empty name.
 - **Evidence first.** Every pillar shows its proof and source. Gaps are [MISSING]. Objection responses and the positioning sentences are left for people. They are never invented.
 - **No usable proof, no pillar.** Proof must have a source, an approver and an approval date, and be in date.
+- **One-sheets are for customers, so they are stricter.** The body carries no interview counts or internal research, only proof points that are usable today. `check-asset` fails a one-sheet that breaks this.
+- **Battlecards are internal and use public information about competitors only.** What a competitor is good at and how to handle them are left [MISSING] for sales to supply.
+- **Launch triage is a suggestion.** It shows the points behind it, marks unanswered questions, and a person records the decision.
 - **A target list is not proof of fit.** It reflects how the list was built. The document compares it with wins before anyone relies on it.
 - **Small groups are not ranked.** A segment needs 5 closed deals and 3 wins. Sales notes are counted by segment and show how many reps said it.
 - **Scores compare options in one run.** They are not forecasts, and a few deals move them a lot.
@@ -128,10 +154,11 @@ If the ICP is still a DRAFT, the exported files say so. A test loads the exporte
 .claude/agents/product-marketing-agent.md   the agent
 prompts/refresh.md                          refresh prompt
 copilot/                                    Copilot instructions and setup
-productmarketing/                           icp, accounts, sales, decisions, proofs, personas, messaging, export, check, cli
-sample-data/                                made-up deals, accounts, notes, interviews, competitors, proof points, decisions
-docs/                                       data guide, example outputs, agent spec
-tests/                                      40 tests
+productmarketing/                           icp, accounts, sales, decisions, proofs, personas, messaging, battlecards,
+                                            fieldguides, onesheets, launches, playbook, export, check, cli
+sample-data/                                made-up deals, accounts, notes, interviews, competitors, proof points, launches, decisions
+docs/                                       data guide, example outputs (docs/examples), agent spec
+tests/                                      63 tests
 ```
 
 ## The B2B Campaign Lifecycle Toolkit

@@ -26,13 +26,17 @@ A target list reflects the filters used to build it. The document shows what the
 
 `deal_id, rep_id, note_type, note, date`. `note_type` is why-won, why-lost, objection, trigger or other. Link every note to a `deal_id` from `deals.csv`, so notes can be counted by segment. Use rep ids, not names. Keep each note to one sentence. Mark made-up notes as made-up.
 
+## `launches/launch-requests.csv` (new products or features waiting for a launch decision)
+
+`launch_id, name, requested_by, target_date, claims, customers_impacted, customer_ask, value_to_prospects, differentiation, revenue_impact, usage_impact, roadmap_fit, notes`. Answers use few, some, many (customers_impacted); small, medium, large (customer_ask); low, medium, high (the next four); and no, partly, yes (roadmap_fit). `claims` is a list of differentiator ids separated by semicolons, so the plan can check their proof. `target_date` is YYYY-MM-DD and sets the 180-day review date. Leave an answer blank if it is unknown. Fewer than 5 answers means the result is undetermined.
+
 ## `customers/interviews.csv` (from your own interview notes)
 
 `interview_id, source, role, industry, pain, trigger, current_alternative, quote`. One row per interview or customer call. Keep the pain short and in the customer's words. Use the same pain wording across rows so they can be counted. Only use quotes people agreed to share.
 
 ## `market/competitors.csv` (public information only)
 
-Name, the claim from their own site, tags you assign (semicolon separated, the same tags as in your differentiators), price tier and the page you read. Do not use confidential or leaked material.
+Name, the claim from their own site, tags you assign (semicolon separated, the same tags as in your differentiators), price tier, the page you read, and optionally `strengths` (what buyers or their public materials say they do well). Leave `strengths` blank if you do not know; the battlecard will say it is missing. Do not use confidential or leaked material.
 
 ## `company/proof-points.csv` (the proof-point register)
 
@@ -48,6 +52,10 @@ Name, the claim from their own site, tags you assign (semicolon separated, the s
 ## `decisions/icp-decisions.csv` (the product marketer's decisions)
 
 `segment, decision, decided_by, date, note`. Written by `decide`. `decision` is confirmed, rejected or watch. The latest row for a segment wins. Until at least one segment is confirmed, every output says the ICP is a DRAFT.
+
+## Launch triage points
+
+Each of the seven answers is worth 0, 1 or 2 points. 9 or more points with a medium or high revenue impact suggests a market launch (marketing direct to customers). 5 to 8 suggests a sales launch (internal enablement and communication). Fewer suggests no launch. This is a suggestion. The product marketer decides.
 
 ## How the scores work
 

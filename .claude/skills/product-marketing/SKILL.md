@@ -12,6 +12,8 @@ Step 1 of the B2B Campaign Lifecycle Toolkit. It comes before the campaign assis
 - Never approve a proof point, mark one usable, or edit approval or expiry dates yourself. Ask who approved it and when.
 - Never invent a deal, quote, customer result, benchmark, sales note, response to an objection or competitor claim.
 - Never present a target-list pattern as proof of buyer fit. The list reflects how it was built.
+- Never write what a competitor is good at, how to handle them, a customer quote or an objection response. Those come from people who talk to buyers.
+- Never record a launch decision for the product marketer.
 
 ## Steps
 
@@ -24,8 +26,13 @@ Step 1 of the B2B Campaign Lifecycle Toolkit. It comes before the campaign assis
 4. **Fill the open slots with the product marketer.** Draft the two open positioning sentences and one message per persona in the brand voice, using only the evidence shown. Offer options, not a verdict. Objection responses come from sales; ask for them.
 5. **Proof points:** run `python3 -m productmarketing proofs --data <folder> --as-of <today>`. List what is expired, expiring within 60 days, not approved or missing a source, and which pillar each affects. Ask the user to supply approvals and refreshed evidence.
 6. **Rebuild and check:** `python3 -m productmarketing check output/positioning-and-messaging.md --profile <product-profile.json>`. Fix every FAIL you can fix with evidence. Report the ones that need a person (ICP decision, approvals).
-7. **Hand off.** `positioning.json` goes to the campaign assistant. `brand-profile.json` is the starter brand profile for the content strategy assistant. If the ICP is still a DRAFT, tell the user the hand-off files say so and what is needed to confirm it.
-8. Show the whole updated document after any change, not only the changed part.
+7. **Build the supporting documents when asked.** `build` writes them all; each has its own command (`battlecards`, `fieldguides`, `onesheets`, `launches`, `playbook`).
+   - Fill the slots only with evidence the user gave you. Battlecard strengths and how to handle a competitor come from sales: ask, do not write them.
+   - A one-sheet is external. Keep interview counts and internal research out of its body. Use only proof points that are usable today.
+   - Launch triage is a suggestion. Ask the product marketer to answer the open questions and decide the path. Record it with `decide-launch` only when they state the decision and their name.
+   - Run `python3 -m productmarketing check-asset <file> --data <folder> --as-of <today>` on every finished document and fix every FAIL.
+8. **Hand off.** `positioning.json` goes to the campaign assistant. `brand-profile.json` is the starter brand profile for the content strategy assistant. If the ICP is still a DRAFT, tell the user the hand-off files say so and what is needed to confirm it.
+9. Show the whole updated document after any change, not only the changed part.
 
 ## Rules
 - Every claim needs its evidence next to it. Missing evidence is written [MISSING].
